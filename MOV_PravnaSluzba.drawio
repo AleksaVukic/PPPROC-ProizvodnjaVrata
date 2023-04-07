@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net" modified="2023-04-06T22:07:34.787Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 YaBrowser/23.3.0.2246 Yowser/2.5 Safari/537.36" etag="prDzRoKTbukoqErj40qj" version="21.1.4" type="device">
+  <diagram name="Page-1" id="GX1rAgUNCNwvtmAvScjb">
+    <mxGraphModel dx="1631" dy="931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cFLCyRkcox2ACn8eyPre-1" value="Ugovor" style="ellipse;whiteSpace=wrap;html=1;fontStyle=1;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry x="200" y="470" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="cFLCyRkcox2ACn8eyPre-2" value="Kupci" style="ellipse;whiteSpace=wrap;html=1;fontStyle=1;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry x="240" y="150" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="cFLCyRkcox2ACn8eyPre-3" value="Dobavljac" style="ellipse;whiteSpace=wrap;html=1;fontStyle=1;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry x="780" y="160" width="200" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="cFLCyRkcox2ACn8eyPre-4" value="Zaposleni" style="ellipse;whiteSpace=wrap;html=1;fontSize=22;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="760" y="480" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="cFLCyRkcox2ACn8eyPre-6" value="IDUgovora" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="255" y="620" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cFLCyRkcox2ACn8eyPre-7" value="DatumFormiranjaUgovora" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="570" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cFLCyRkcox2ACn8eyPre-9" value="IDKupca" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="150" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cFLCyRkcox2ACn8eyPre-10" value="ImeKupca" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="100" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cFLCyRkcox2ACn8eyPre-11" value="Ugovor" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="80" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cFLCyRkcox2ACn8eyPre-12" value="Adresa" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="220" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cFLCyRkcox2ACn8eyPre-13" value="IDDobavljaca" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="90" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cFLCyRkcox2ACn8eyPre-14" value="Ime" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="100" width="60" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="cFLCyRkcox2ACn8eyPre-15" value="Adresa" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="980" y="130" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cFLCyRkcox2ACn8eyPre-16" value="e-mail" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="200" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cFLCyRkcox2ACn8eyPre-17" value="Ugovor" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="280" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cFLCyRkcox2ACn8eyPre-18" value="IDZaposlenih" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="460" width="80" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="cFLCyRkcox2ACn8eyPre-19" value="ImeZaposlenog" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="550" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cFLCyRkcox2ACn8eyPre-20" value="Ugovor" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="620" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cFLCyRkcox2ACn8eyPre-21" value="Adresa" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="640" width="80" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
