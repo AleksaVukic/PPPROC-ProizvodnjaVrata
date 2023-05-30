@@ -1,11 +1,11 @@
 BEGIN TRANSACTION;
-CREATE TABLE IF NOT EXISTS "Sifarnik materijala" (
+CREATE TABLE IF NOT EXISTS "SifarnikMaterijala" (
 	"ID materijala"	INTEGER,
 	"Naziv"	TEXT,
 	"Jedinica mere"	TEXT,
 	"Raspolozive kolicine"	TEXT,
 	"Cena"	TEXT,
-	"MInimalna kolicina"	REAL,
+	"Minimalna kolicina"	REAL,
 	"Maksimalna kolicina"	TEXT,
 	"Rok isporuke"	TEXT,
 	"Dostupnost"	TEXT,
@@ -15,32 +15,13 @@ CREATE TABLE IF NOT EXISTS "Operacije" (
 	"ID operacije"	INTEGER,
 	"Naziv"	TEXT,
 	"Vreme izvrsenja"	TEXT,
-	"Resursi"	TEXT,
+	"Materijali"	TEXT,
 	"Redosled operacija"	TEXT,
 	"Masine i alati"	TEXT,
 	"Kvalitet kontrole"	TEXT,
 	"Radnici"	TEXT
 );
-CREATE TABLE IF NOT EXISTS "Normativ proizvoda" (
-	"ID norme"	INTEGER,
-	"ID operacije"	INTEGER,
-	"Vreme izvrsenja"	TEXT,
-	"Potrebni resursi"	TEXT,
-	"Radna snaga"	TEXT,
-	"Instrukcije"	TEXT,
-	"Kvalitet i standardi"	TEXT,
-	"Tehnicka dokumentacija"	TEXT
-);
-CREATE TABLE IF NOT EXISTS "Resursi" (
-	"ID resursa"	INTEGER,
-	"Naziv resursa"	TEXT,
-	"Kolicina"	TEXT,
-	"Dostupnost"	TEXT,
-	"Lokacija"	TEXT,
-	"Vreme dostupnosti"	TEXT,
-	"Opis "	TEXT
-);
-CREATE TABLE IF NOT EXISTS "Sifarnik proizvoda" (
+CREATE TABLE IF NOT EXISTS "SifarnikProizvoda" (
 	"ID proizvoda"	INTEGER,
 	"Opis"	TEXT,
 	"Kategorija"	TEXT,
@@ -48,5 +29,13 @@ CREATE TABLE IF NOT EXISTS "Sifarnik proizvoda" (
 	"Materijal"	TEXT,
 	"Naziv"	TEXT,
 	"Radnici"	TEXT
+);
+CREATE TABLE IF NOT EXISTS "NormativProizvoda" (
+	"ID norme"	INTEGER,
+	"Vreme izvrsenja"	TEXT,
+	"Potrebni resursi"	TEXT,
+	"Instrukcije"	TEXT,
+	"Kvalitet i standardi"	TEXT,
+	"Tehnicka dokumentacija"	TEXT
 );
 COMMIT;
