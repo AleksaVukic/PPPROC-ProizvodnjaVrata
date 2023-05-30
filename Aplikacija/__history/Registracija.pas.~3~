@@ -1,0 +1,75 @@
+unit Registracija;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
+  FMX.Edit, FMX.Controls.Presentation, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Param, FireDAC.Stan.Error,FireDAC.Stan.Def, FireDAC.DatS, FireDAC.Phys.Intf,
+  FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, Data.DB,
+  FireDAC.Comp.DataSet, FireDAC.Comp.Client, Data.FMTBcd, Data.SqlExpr;
+
+type
+  TfrmRegister = class(TForm)
+    Title: TLabel;
+    Panel2: TPanel;
+    Email: TEdit;
+    Email_Label: TLabel;
+    Sifra: TEdit;
+    Sifra_Label: TLabel;
+    Prijava: TButton;
+    Panel1: TPanel;
+    Registracija: TButton;
+    Prezime: TEdit;
+    Prezime_Label: TLabel;
+    Ime: TEdit;
+    Ime_Label: TLabel;
+    BrTelefona_Label: TLabel;
+    BrTelefona: TEdit;
+    procedure PrijavaClick(Sender: TObject);
+    procedure RegistracijaClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmRegister: TfrmRegister;
+
+implementation
+
+{$R *.fmx}
+
+uses LogIn, Main;
+
+procedure TfrmRegister.PrijavaClick(Sender: TObject);
+begin
+frmLogIn.show;
+self.hide;
+end;
+
+procedure TfrmRegister.RegistracijaClick(Sender: TObject);
+begin
+var
+  MyQuery: TFDQuery;
+begin
+  MyQuery := TFDQuery.Create(nil);
+  try
+    MyQuery.Connection := GlobalConnection;
+    MyQuery.SQL.Text :='INSERT INTO NALOG (IME,PREZIME,BRTELEFONA,EMAIL,SIFRA) VALUES (:ime, :prezime, :brtelefona, :email, :sifra)';
+    MyQuery.ParamByName('ime').AsString := Ime.Text;
+    MyQuery.ParamByName('prezime').AsString := Prezime.Text;
+    MyQuery.ParamByName('brtelefona').AsString := BrTelefona.Text;
+    MyQuery.ParamByName('email').AsString := Email.Text;
+    MyQuery.ParamByName('sifra').AsString := Sifra.Text;
+    MyQuery.ExecSQL;
+
+  finally
+    MyQuery.Free;
+  end;
+end;
+end;
+
+end.
