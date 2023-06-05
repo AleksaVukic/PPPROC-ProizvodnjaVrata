@@ -1,0 +1,81 @@
+unit LogIn;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.Controls.Presentation, FMX.Edit, FMX.StdCtrls, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf,
+  FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys,
+  FireDAC.FMXUI.Wait, Data.DB, FireDAC.Comp.Client;
+
+type
+  TfrmLogIn = class(TForm)
+    Email: TEdit;
+    Panel1: TPanel;
+    Title: TLabel;
+    Panel2: TPanel;
+    Sifra: TEdit;
+    Email_Label: TLabel;
+    Sifra_Label: TLabel;
+    Prijava: TButton;
+    Registracija: TButton;
+    procedure RegistracijaClick(Sender: TObject);
+    procedure PrijavaClick(Sender: TObject);
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmLogIn: TfrmLogIn;
+
+implementation
+
+{$R *.fmx}
+
+uses Registracija,Main,GlavnaStrana;
+
+procedure TfrmLogIn.PrijavaClick(Sender: TObject);
+begin
+var
+  MyQuery: TFDQuery;
+
+  begin
+    MyQuery := TFDQuery.Create(nil);
+    try
+      MyQuery.Connection := GlobalConnection;
+      MyQuery.SQL.Text := 'SELECT * FROM Nalog WHERE Email = :Email AND Sifra = :Sifra';
+      MyQuery.Params.ParamByName('Email').AsString := Email.Text;
+      MyQuery.Params.ParamByName('Sifra').AsString := Sifra.Text;
+      MyQuery.Open;
+
+      if not MyQuery.IsEmpty then
+      begin
+      var
+        UlogovaniKorisnikID := MyQuery.FieldByName('NalogID').AsInteger;
+
+        frmGlavnaStrana.Show;
+        self.hide;
+      end
+      else
+      begin
+        ShowMessage('Netacan mejl ili lozinka.');
+      end;
+    finally
+      MyQuery.Free;
+
+    end;
+  end;
+end;
+
+procedure TfrmLogIn.RegistracijaClick(Sender: TObject);
+begin
+frmRegister.show;
+self.hide;
+end;
+
+end.

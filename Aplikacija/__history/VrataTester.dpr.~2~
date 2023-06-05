@@ -1,0 +1,16 @@
+program VrataTester;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  LogIn in 'LogIn.pas' {Form1},
+  Register in 'Register.pas' {Form2};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TForm2, Form2);
+  Application.Run;
+end.

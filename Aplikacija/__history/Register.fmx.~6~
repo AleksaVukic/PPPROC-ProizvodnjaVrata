@@ -1,0 +1,145 @@
+object frmRegister: TfrmRegister
+  Left = 0
+  Top = 0
+  Caption = 'Registracija'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Position.X = -1.000000000000000000
+    Position.Y = 432.000000000000000000
+    Size.Width = 641.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+  object Panel2: TPanel
+    Position.X = -9.000000000000000000
+    Size.Width = 641.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+  end
+  object Title: TLabel
+    Position.X = 240.000000000000000000
+    Position.Y = 16.000000000000000000
+    Scale.X = 2.000000000000000000
+    Scale.Y = 2.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'REGISTRACIJA'
+    TabOrder = 7
+  end
+  object Email: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    Position.X = 200.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Email_Label: TLabel
+    Position.X = 104.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Email:'
+    TabOrder = 16
+  end
+  object Sifra: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    Position.X = 200.000000000000000000
+    Position.Y = 256.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Sifra_Label: TLabel
+    Position.X = 104.000000000000000000
+    Position.Y = 256.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Sifra:'
+    TabOrder = 9
+  end
+  object Prijava: TButton
+    Position.X = 16.000000000000000000
+    Position.Y = 448.000000000000000000
+    TabOrder = 14
+    Text = 'Prijava'
+    OnClick = PrijavaClick
+  end
+  object Registracija: TButton
+    Position.X = 352.000000000000000000
+    Position.Y = 296.000000000000000000
+    TabOrder = 12
+    Text = 'Registracija'
+    OnClick = RegistracijaClick
+  end
+  object Prezime: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 3
+    Position.X = 200.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Prezime_Label: TLabel
+    Position.X = 104.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Prezime:'
+    TabOrder = 13
+  end
+  object Ime: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Position.X = 200.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Ime_Label: TLabel
+    Position.X = 104.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Ime:'
+    TabOrder = 11
+  end
+  object BrTelefona_Label: TLabel
+    Position.X = 104.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Broj Telefona:'
+    TabOrder = 15
+  end
+  object BrTelefona: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Position.X = 200.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object FDQuery1: TFDQuery
+    Left = 608
+    Top = 448
+  end
+end

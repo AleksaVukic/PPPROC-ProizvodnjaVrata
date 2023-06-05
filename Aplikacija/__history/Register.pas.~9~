@@ -1,0 +1,59 @@
+unit Register;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
+  FMX.Edit, FMX.Controls.Presentation;
+
+type
+  TfrmRegister = class(TForm)
+    Title: TLabel;
+    Panel2: TPanel;
+    Email: TEdit;
+    Email_Label: TLabel;
+    Sifra: TEdit;
+    Sifra_Label: TLabel;
+    Prijava: TButton;
+    Panel1: TPanel;
+    Registracija: TButton;
+    Prezime: TEdit;
+    Prezime_Label: TLabel;
+    Ime: TEdit;
+    Ime_Label: TLabel;
+    BrTelefona_Label: TLabel;
+    BrTelefona: TEdit;
+    procedure PrijavaClick(Sender: TObject);
+    procedure RegistracijaClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmRegister: TfrmRegister;
+
+implementation
+
+{$R *.fmx}
+
+uses LogIn;
+
+procedure TfrmRegister.PrijavaClick(Sender: TObject);
+begin
+frmLogIn.show;
+self.hide;
+end;
+
+procedure TfrmRegister.RegistracijaClick(Sender: TObject);
+begin
+var
+  MyQuery: TFDQuery;
+begin
+  MyQuery := TFDQuery.Create(nil);
+end;
+end;
+
+end.

@@ -1,0 +1,35 @@
+unit LogIn;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.Controls.Presentation, FMX.Edit, FMX.StdCtrls;
+
+type
+  TfrmLogIn = class(TForm)
+    Email: TEdit;
+    Panel1: TPanel;
+    Title: TLabel;
+    Panel2: TPanel;
+    Sifra: TEdit;
+    Email_Label: TLabel;
+    Sifra_Label: TLabel;
+    Prijava: TButton;
+    Registracija: TButton;
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmLogIn: TfrmLogIn;
+
+implementation
+
+{$R *.fmx}
+
+end.

@@ -1,0 +1,71 @@
+object frmLogIn: TfrmLogIn
+  Left = 0
+  Top = 0
+  Caption = 'Log In'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Position.X = 200.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Panel1: TPanel
+    Position.Y = 432.000000000000000000
+    Size.Width = 641.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+  end
+  object Panel2: TPanel
+    Size.Width = 641.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+  end
+  object Label1: TLabel
+    Position.X = 272.000000000000000000
+    Position.Y = 16.000000000000000000
+    Scale.X = 2.000000000000000000
+    Scale.Y = 2.000000000000000000
+    Size.Width = 41.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'LOG IN'
+    TabOrder = 3
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    Position.X = 200.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label2: TLabel
+    Position.X = 144.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Email:'
+    TabOrder = 7
+  end
+  object Label3: TLabel
+    Position.X = 144.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Email:'
+    TabOrder = 6
+  end
+end
