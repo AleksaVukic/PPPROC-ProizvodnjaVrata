@@ -1,29 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2023.05.30 20:10:20.128,=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas</Transaction>
-    <Transaction>2023.05.30 20:12:06.578,D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\VrataTest.fmx=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.fmx</Transaction>
-    <Transaction>2023.05.30 20:12:06.578,D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\VrataTest.pas=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas</Transaction>
-    <Transaction>2023.05.30 20:13:56.808,D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\VrataTester.dproj=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Project1.dproj</Transaction>
-    <Transaction>2023.05.30 20:16:57.909,=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit2.pas</Transaction>
-    <Transaction>2023.05.30 20:17:39.772,D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\LogIn.pas=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\VrataTest.pas</Transaction>
-    <Transaction>2023.05.30 20:17:39.772,D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\LogIn.fmx=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\VrataTest.fmx</Transaction>
-    <Transaction>2023.05.30 20:17:52.460,D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Register.pas=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit2.pas</Transaction>
-    <Transaction>2023.05.30 20:17:52.460,D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Register.fmx=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit2.fmx</Transaction>
-    <Transaction>2023.05.30 20:39:21.253,D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\GatekeeperWeb.dproj=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\VrataTester.dproj</Transaction>
-    <Transaction>2023.05.30 21:59:20.978,=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas</Transaction>
-    <Transaction>2023.05.30 21:59:54.052,=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas</Transaction>
-    <Transaction>2023.05.30 22:10:51.993,=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas</Transaction>
-    <Transaction>2023.05.30 22:11:21.734,=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas</Transaction>
-    <Transaction>2023.05.30 22:11:26.657,D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Main.pas=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas</Transaction>
-    <Transaction>2023.05.30 22:11:26.657,D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Main.fmx=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.fmx</Transaction>
-    <Transaction>2023.05.30 22:34:38.081,D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Registracija.pas=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Register.pas</Transaction>
-    <Transaction>2023.05.30 22:34:38.081,D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Registracija.fmx=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Register.fmx</Transaction>
-    <Transaction>2023.05.30 23:17:32.900,=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas</Transaction>
-    <Transaction>2023.05.30 23:17:42.750,D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\GlavnaStrana.fmx=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.fmx</Transaction>
-    <Transaction>2023.05.30 23:17:42.750,D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\GlavnaStrana.pas=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas</Transaction>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.734,=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.843,=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.407,=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.978,=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.993,=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.900,=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.052,=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.631,D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Nalog.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.772,3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\LogIn.pas=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\VrataTest.pas=D:\</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.460,3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Register.pas=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit2.pas=D:\</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.081,3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Registracija.pas=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Register.pas=D:\</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.657,3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Main.fmx=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.fmx=D:\</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.657,3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Main.pas=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas=D:\</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.631,D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.fmx=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Nalog.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.750,3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\GlavnaStrana.fmx=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.fmx=D:\</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.909,=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.081,3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Registracija.fmx=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Register.fmx=D:\</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.578,3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\VrataTest.pas=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas=D:\</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.460,3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Register.fmx=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit2.fmx=D:\</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.808,3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\VrataTester.dproj=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Project1.dproj=D:\</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.772,3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\LogIn.fmx=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\VrataTest.fmx=D:\</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.253,3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\GatekeeperWeb.dproj=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\VrataTester.dproj=D:\</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.128,=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.578,3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\VrataTest.fmx=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.fmx=D:\</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.750,3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\GlavnaStrana.pas=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas=D:\</Transaction>
+    <Transaction>2023.06.21 15:29:31.728,=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit2.pas</Transaction>
+    <Transaction>2023.06.21 15:29:44.011,D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\GlavnaStranaAdmin.fmx=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit2.fmx</Transaction>
+    <Transaction>2023.06.21 15:29:44.011,D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\GlavnaStranaAdmin.pas=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit2.pas</Transaction>
   </Transactions>
-  <ProjectSortOrder AutoSort="0" SortType="0">
+	<ProjectSortOrder AutoSort="0" SortType="0">
     <File Path="android-support-v4.dex.jar"/>
     <File Path="cloud-messaging.dex.jar"/>
     <File Path="com-google-android-gms.play-services-ads-base.17.2.0.dex.jar"/>
@@ -88,5 +95,9 @@
     <File Path="Main.fmx"/>
     <File Path="GlavnaStrana.pas"/>
     <File Path="GlavnaStrana.fmx"/>
+    <File Path="Nalog.pas"/>
+    <File Path="Nalog.fmx"/>
+    <File Path="GlavnaStranaAdmin.pas"/>
+    <File Path="GlavnaStranaAdmin.fmx"/>
   </ProjectSortOrder>
 </BorlandProject>
