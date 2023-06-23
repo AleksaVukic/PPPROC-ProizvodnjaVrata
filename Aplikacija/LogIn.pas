@@ -37,7 +37,7 @@ implementation
 
 {$R *.fmx}
 
-uses Registracija,Main,GlavnaStrana;
+uses Registracija,Main,GlavnaStrana,GlavnaStranaAdmin;
 
 procedure TfrmLogIn.PrijavaClick(Sender: TObject);
 begin
@@ -53,7 +53,12 @@ var
       MyQuery.Params.ParamByName('Sifra').AsString := Sifra.Text;
       MyQuery.Open;
 
-      if not MyQuery.IsEmpty then
+      if Email.Text = ('admin@gmail.com') then
+      begin
+         frmGlavnaStranaAdmin.Show;
+         self.hide;
+      end
+      else if not MyQuery.IsEmpty then
       begin
       var
         UlogovaniKorisnikID := MyQuery.FieldByName('NalogID').AsInteger;
