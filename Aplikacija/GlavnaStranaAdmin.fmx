@@ -468,8 +468,8 @@ object frmGlavnaStranaAdmin: TfrmGlavnaStranaAdmin
     TabOrder = 4
   end
   object MainMenu1: TMainMenu
-    Left = 448
-    Top = 128
+    Left = 600
+    Top = 432
     object MenuItem1: TMenuItem
       Text = 'NABAVKA'
     end
