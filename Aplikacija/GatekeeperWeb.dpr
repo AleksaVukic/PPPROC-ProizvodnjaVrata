@@ -9,7 +9,7 @@ uses
   GlavnaStrana in 'GlavnaStrana.pas' {frmGlavnaStrana},
   Nalog in 'Nalog.pas' {Form1},
   GlavnaStranaAdmin in 'GlavnaStranaAdmin.pas' {frmGlavnaStranaAdmin},
-  Prodaja in 'Prodaja.pas' {Form2};
+  Prodaja in 'Prodaja.pas' {frmProdaja};
 
 {$R *.res}
 
@@ -21,6 +21,6 @@ begin
   Application.CreateForm(TfrmGlavnaStrana, frmGlavnaStrana);
   Application.CreateForm(TForm1, Form1);
   Application.CreateForm(TfrmGlavnaStranaAdmin, frmGlavnaStranaAdmin);
-  Application.CreateForm(TForm2, Form2);
+  Application.CreateForm(TfrmProdaja, frmProdaja);
   Application.Run;
 end.

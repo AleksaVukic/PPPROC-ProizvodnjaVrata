@@ -1,0 +1,72 @@
+unit Prodaja;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.Controls.Presentation, FMX.StdCtrls, FMX.Objects, FMX.Ani;
+
+type
+  TForm2 = class(TForm)
+    profslika: TCircle;
+    toolbar: TToolBar;
+    logo: TImage;
+    bottom_bar: TRectangle;
+    div_korpa: TRoundRect;
+    Korpa: TButton;
+    Back: TButton;
+    Home: TButton;
+    PROIZVODI: TLabel;
+    Z: TRoundRect;
+    Proizvod2: TRoundRect;
+    Proizvod3: TRoundRect;
+    Proizvod4: TRoundRect;
+    RoundRect1: TRoundRect;
+    p1: TLabel;
+    vrsta: TLabel;
+    Image1: TImage;
+    procedure RoundRect1Click(Sender: TObject);
+    procedure Proizvod1Click(Sender: TObject);
+    procedure RoundRect2Click(Sender: TObject);
+    procedure Label1Click(Sender: TObject);
+    procedure Image1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.fmx}
+
+procedure TForm2.Image1Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm2.Label1Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm2.Proizvod1Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm2.RoundRect1Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm2.RoundRect2Click(Sender: TObject);
+begin
+
+end;
+
+end.

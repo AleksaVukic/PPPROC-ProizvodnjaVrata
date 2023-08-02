@@ -28,6 +28,8 @@ type
     MenuItem4: TMenuItem;
     MenuItem5: TMenuItem;
     MenuItem6: TMenuItem;
+    Button1: TButton;
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -37,10 +39,19 @@ type
 var
   frmGlavnaStranaAdmin: TfrmGlavnaStranaAdmin;
 
+
 implementation
 
 {$R *.fmx}
 
+uses Prodaja;
 
+
+
+procedure TfrmGlavnaStranaAdmin.Button1Click(Sender: TObject);
+begin
+frmProdaja.show;
+self.hide;
+end;
 
 end.

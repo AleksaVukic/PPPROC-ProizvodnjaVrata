@@ -160,7 +160,7 @@
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="Prodaja.pas">
-            <Form>Form2</Form>
+            <Form>frmProdaja</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">
