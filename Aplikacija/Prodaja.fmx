@@ -9094,11 +9094,11 @@ object frmProdaja: TfrmProdaja
         Text = 'Saznajte vi'#353'e'
         TabOrder = 0
       end
-      object RoundRect5: TRoundRect
+      object Vise1: TRoundRect
         Size.Width = 89.000000000000000000
         Size.Height = 31.000000000000000000
         Size.PlatformDefault = False
-        OnClick = RoundRect5Click
+        OnClick = Vise1Click
         object Label8: TLabel
           Align = Center
           StyledSettings = [Family, Size, FontColor]
@@ -9213,6 +9213,24 @@ object frmProdaja: TfrmProdaja
         TabOrder = 1
       end
     end
+    object Vise2: TRoundRect
+      Position.X = 104.000000000000000000
+      Position.Y = 113.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 31.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = Vise1Click
+      object Label9: TLabel
+        Align = Center
+        StyledSettings = [Family, Size, FontColor]
+        Size.Width = 77.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'Saznajte vi'#353'e'
+        TabOrder = 0
+      end
+    end
   end
   object Proizvod3: TRoundRect
     Fill.Color = xFFAABAB9
@@ -9302,6 +9320,7 @@ object frmProdaja: TfrmProdaja
             ' male h160-03.png'
         end>
       Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
       Size.Width = 88.000000000000000000
       Size.Height = 97.000000000000000000
       Size.PlatformDefault = False
@@ -9334,6 +9353,24 @@ object frmProdaja: TfrmProdaja
         TextSettings.Font.StyleExt = {00070000000000000004000000}
         Text = '(P - 3)'
         TabOrder = 1
+      end
+    end
+    object Vise3: TRoundRect
+      Position.X = 96.000000000000000000
+      Position.Y = 113.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 31.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = Vise1Click
+      object Label10: TLabel
+        Align = Center
+        StyledSettings = [Family, Size, FontColor]
+        Size.Width = 77.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'Saznajte vi'#353'e'
+        TabOrder = 0
       end
     end
   end
@@ -9462,6 +9499,24 @@ object frmProdaja: TfrmProdaja
         TextSettings.Font.StyleExt = {00070000000000000004000000}
         Text = '(P - 4)'
         TabOrder = 1
+      end
+    end
+    object Vise4: TRoundRect
+      Position.X = 104.000000000000000000
+      Position.Y = 113.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 31.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = Vise1Click
+      object Label11: TLabel
+        Align = Center
+        StyledSettings = [Family, Size, FontColor]
+        Size.Width = 77.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'Saznajte vi'#353'e'
+        TabOrder = 0
       end
     end
   end

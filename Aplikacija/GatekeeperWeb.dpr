@@ -18,7 +18,10 @@ uses
   Korpa in 'Korpa.pas' {frmKorpa},
   Magacin in 'Magacin.pas' {frmMagacin},
   Pravna in 'Pravna.pas' {frmPravna},
-  Proizvod1 in 'Proizvod1.pas' {frmProizvod1};
+  Proizvod1 in 'Proizvod1.pas' {frmProizvod1},
+  Proizvod2 in 'Proizvod2.pas' {frmProizvod2},
+  Proizvod3 in 'Proizvod3.pas' {frmProizvod3},
+  Proizvod4 in 'Proizvod4.pas' {frmProizvod4};
 
 {$R *.res}
 
@@ -40,5 +43,8 @@ begin
   Application.CreateForm(TfrmMagacin, frmMagacin);
   Application.CreateForm(TfrmPravna, frmPravna);
   Application.CreateForm(TfrmProizvod1, frmProizvod1);
+  Application.CreateForm(TfrmProizvod2, frmProizvod2);
+  Application.CreateForm(TfrmProizvod3, frmProizvod3);
+  Application.CreateForm(TfrmProizvod4, frmProizvod4);
   Application.Run;
 end.

@@ -40,10 +40,19 @@ type
     RoundRect2: TRoundRect;
     Label7: TLabel;
     Image1: TImage;
-    RoundRect5: TRoundRect;
+    Vise1: TRoundRect;
     Label8: TLabel;
+    Vise2: TRoundRect;
+    Label9: TLabel;
+    Vise3: TRoundRect;
+    Label10: TLabel;
+    Vise4: TRoundRect;
+    Label11: TLabel;
     procedure KorpaClick(Sender: TObject);
-    procedure RoundRect5Click(Sender: TObject);
+    procedure Vise1Click(Sender: TObject);
+    procedure Vise2Click(Sender: TObject);
+    procedure Vise3Click(Sender: TObject);
+    procedure Vise4Click(Sender: TObject);
     procedure BackClick(Sender: TObject);
 
 
@@ -62,7 +71,7 @@ implementation
 
 {$R *.fmx}
 
-uses Korpa, Proizvod1,GlavnaStranaAdmin;
+uses Korpa, Proizvod1,GlavnaStranaAdmin, Proizvod2, Proizvod3, Proizvod4;
 
 procedure TfrmProdaja.BackClick(Sender: TObject);
 begin
@@ -82,10 +91,29 @@ end;
 
 
 
-procedure TfrmProdaja.RoundRect5Click(Sender: TObject);
+procedure TfrmProdaja.Vise1Click(Sender: TObject);
 begin
 frmProizvod1.Show;
 self.Hide;
 end;
+
+procedure TfrmProdaja.Vise2Click(Sender: TObject);
+begin
+frmProizvod2.Show;
+self.Hide;
+end;
+
+procedure TfrmProdaja.Vise3Click(Sender: TObject);
+begin
+frmProizvod3.Show;
+self.Hide;
+end;
+
+procedure TfrmProdaja.Vise4Click(Sender: TObject);
+begin
+frmProizvod4.Show;
+self.Hide;
+end;
+
 
 end.

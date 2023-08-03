@@ -191,6 +191,18 @@
             <Form>frmProizvod1</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+        <DCCReference Include="Proizvod2.pas">
+            <Form>frmProizvod2</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="Proizvod3.pas">
+            <Form>frmProizvod3</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="Proizvod4.pas">
+            <Form>frmProizvod4</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
