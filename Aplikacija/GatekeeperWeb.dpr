@@ -17,7 +17,8 @@ uses
   Normiranje in 'Normiranje.pas' {frmNormiranje},
   Korpa in 'Korpa.pas' {frmKorpa},
   Magacin in 'Magacin.pas' {frmMagacin},
-  Pravna in 'Pravna.pas' {frmPravna};
+  Pravna in 'Pravna.pas' {frmPravna},
+  Proizvod1 in 'Proizvod1.pas' {frmProizvod1};
 
 {$R *.res}
 
@@ -38,5 +39,6 @@ begin
   Application.CreateForm(TfrmKorpa, frmKorpa);
   Application.CreateForm(TfrmMagacin, frmMagacin);
   Application.CreateForm(TfrmPravna, frmPravna);
+  Application.CreateForm(TfrmProizvod1, frmProizvod1);
   Application.Run;
 end.

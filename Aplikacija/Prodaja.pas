@@ -16,7 +16,6 @@ type
     div_korpa: TRoundRect;
     Korpa: TButton;
     Back: TButton;
-    Home: TButton;
     PROIZVODI: TLabel;
     Proizvod1: TRoundRect;
     RoundRect1: TRoundRect;
@@ -43,6 +42,11 @@ type
     Image1: TImage;
     RoundRect5: TRoundRect;
     Label8: TLabel;
+    procedure KorpaClick(Sender: TObject);
+    procedure RoundRect5Click(Sender: TObject);
+    procedure BackClick(Sender: TObject);
+
+
   private
     { Private declarations }
   public
@@ -52,8 +56,36 @@ type
 var
   frmProdaja: TfrmProdaja;
 
+
+
 implementation
 
 {$R *.fmx}
+
+uses Korpa, Proizvod1,GlavnaStranaAdmin;
+
+procedure TfrmProdaja.BackClick(Sender: TObject);
+begin
+frmGlavnaStranaAdmin.show;
+self.Hide;
+
+end;
+
+
+procedure TfrmProdaja.KorpaClick(Sender: TObject);
+begin
+
+frmKorpa.show;
+self.hide;
+
+end;
+
+
+
+procedure TfrmProdaja.RoundRect5Click(Sender: TObject);
+begin
+frmProizvod1.Show;
+self.Hide;
+end;
 
 end.
