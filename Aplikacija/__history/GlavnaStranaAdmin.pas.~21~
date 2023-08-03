@@ -30,7 +30,6 @@ type
     MenuItem6: TMenuItem;
     Button1: TButton;
     MenuItem7: TMenuItem;
-    MenuItem8: TMenuItem;
     procedure Button1Click(Sender: TObject);
     procedure MenuItem1Click(Sender: TObject);
     procedure MenuItem2Click(Sender: TObject);
@@ -39,7 +38,6 @@ type
     procedure MenuItem5Click(Sender: TObject);
     procedure MenuItem6Click(Sender: TObject);
     procedure MenuItem7Click(Sender: TObject);
-    procedure MenuItem8Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -54,7 +52,7 @@ implementation
 
 {$R *.fmx}
 
-uses Prodaja,Nabavka,Podsetnik,Magacin,Cenovnik,Knjigovodjstvo,Pravna,Normiranje,Proizvodnja;
+uses Prodaja,Nabavka,Podsetnik,Magacin,Cenovnik,Knjigovodjstvo,Pravna,Normiranje;
 
 
 
@@ -97,11 +95,6 @@ end;
 procedure TfrmGlavnaStranaAdmin.MenuItem7Click(Sender: TObject);
 begin
 frmKnjigovodjstvo.show;
-end;
-
-procedure TfrmGlavnaStranaAdmin.MenuItem8Click(Sender: TObject);
-begin
-frmProizvodnja.show;
 end;
 
 end.

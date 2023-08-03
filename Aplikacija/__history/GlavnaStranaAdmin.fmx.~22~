@@ -496,10 +496,6 @@ object frmGlavnaStranaAdmin: TfrmGlavnaStranaAdmin
       Text = 'KNJIGOVODJSTVO'
       OnClick = MenuItem7Click
     end
-    object MenuItem8: TMenuItem
-      Text = 'PROIZVODNJA'
-      OnClick = MenuItem8Click
-    end
   end
   object Button1: TButton
     Position.X = 280.000000000000000000
