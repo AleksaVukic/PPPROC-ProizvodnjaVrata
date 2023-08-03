@@ -9,7 +9,15 @@ uses
   GlavnaStrana in 'GlavnaStrana.pas' {frmGlavnaStrana},
   Nalog in 'Nalog.pas' {Form1},
   GlavnaStranaAdmin in 'GlavnaStranaAdmin.pas' {frmGlavnaStranaAdmin},
-  Prodaja in 'Prodaja.pas' {frmProdaja};
+  Prodaja in 'Prodaja.pas' {frmProdaja},
+  Nabavka in 'Nabavka.pas' {frmNabavka},
+  Podsetnik in 'Podsetnik.pas' {frmPodsetnik},
+  Cenovnik in 'Cenovnik.pas' {frmCenovnik},
+  Knjigovodjstvo in 'Knjigovodjstvo.pas' {frmKnjigovodjstvo},
+  Normiranje in 'Normiranje.pas' {frmNormiranje},
+  Korpa in 'Korpa.pas' {frmKorpa},
+  Magacin in 'Magacin.pas' {frmMagacin},
+  Pravna in 'Pravna.pas' {frmPravna};
 
 {$R *.res}
 
@@ -22,5 +30,13 @@ begin
   Application.CreateForm(TForm1, Form1);
   Application.CreateForm(TfrmGlavnaStranaAdmin, frmGlavnaStranaAdmin);
   Application.CreateForm(TfrmProdaja, frmProdaja);
+  Application.CreateForm(TfrmNabavka, frmNabavka);
+  Application.CreateForm(TfrmPodsetnik, frmPodsetnik);
+  Application.CreateForm(TfrmCenovnik, frmCenovnik);
+  Application.CreateForm(TfrmKnjigovodjstvo, frmKnjigovodjstvo);
+  Application.CreateForm(TfrmNormiranje, frmNormiranje);
+  Application.CreateForm(TfrmKorpa, frmKorpa);
+  Application.CreateForm(TfrmMagacin, frmMagacin);
+  Application.CreateForm(TfrmPravna, frmPravna);
   Application.Run;
 end.

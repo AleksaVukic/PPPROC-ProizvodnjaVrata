@@ -29,7 +29,15 @@ type
     MenuItem5: TMenuItem;
     MenuItem6: TMenuItem;
     Button1: TButton;
+    MenuItem7: TMenuItem;
     procedure Button1Click(Sender: TObject);
+    procedure MenuItem1Click(Sender: TObject);
+    procedure MenuItem2Click(Sender: TObject);
+    procedure MenuItem3Click(Sender: TObject);
+    procedure MenuItem4Click(Sender: TObject);
+    procedure MenuItem5Click(Sender: TObject);
+    procedure MenuItem6Click(Sender: TObject);
+    procedure MenuItem7Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -44,7 +52,7 @@ implementation
 
 {$R *.fmx}
 
-uses Prodaja;
+uses Prodaja,Nabavka,Podsetnik,Magacin,Cenovnik,Knjigovodjstvo,Pravna,Normiranje;
 
 
 
@@ -52,6 +60,41 @@ procedure TfrmGlavnaStranaAdmin.Button1Click(Sender: TObject);
 begin
 frmProdaja.show;
 self.hide;
+end;
+
+procedure TfrmGlavnaStranaAdmin.MenuItem1Click(Sender: TObject);
+begin
+frmNabavka.show;
+end;
+
+procedure TfrmGlavnaStranaAdmin.MenuItem2Click(Sender: TObject);
+begin
+frmPodsetnik.show;
+end;
+
+procedure TfrmGlavnaStranaAdmin.MenuItem3Click(Sender: TObject);
+begin
+frmMagacin.show;
+end;
+
+procedure TfrmGlavnaStranaAdmin.MenuItem4Click(Sender: TObject);
+begin
+frmNormiranje.show;
+end;
+
+procedure TfrmGlavnaStranaAdmin.MenuItem5Click(Sender: TObject);
+begin
+frmPravna.show;
+end;
+
+procedure TfrmGlavnaStranaAdmin.MenuItem6Click(Sender: TObject);
+begin
+frmCenovnik.show;
+end;
+
+procedure TfrmGlavnaStranaAdmin.MenuItem7Click(Sender: TObject);
+begin
+frmKnjigovodjstvo.show;
 end;
 
 end.
