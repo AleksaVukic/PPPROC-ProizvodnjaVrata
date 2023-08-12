@@ -204,7 +204,7 @@
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="Nalog.pas">
-            <Form>Form1</Form>
+            <Form>frmNalog</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="GlavnaStranaAdmin.pas">

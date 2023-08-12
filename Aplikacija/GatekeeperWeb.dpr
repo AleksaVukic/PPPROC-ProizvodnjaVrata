@@ -7,7 +7,7 @@ uses
   Registracija in 'Registracija.pas' {frmRegister},
   Main in 'Main.pas' {frmMain},
   GlavnaStrana in 'GlavnaStrana.pas' {frmGlavnaStrana},
-  Nalog in 'Nalog.pas' {Form1},
+  Nalog in 'Nalog.pas' {frmNalog},
   GlavnaStranaAdmin in 'GlavnaStranaAdmin.pas' {frmGlavnaStranaAdmin},
   Prodaja in 'Prodaja.pas' {frmProdaja},
   Nabavka in 'Nabavka.pas' {frmNabavka},
@@ -33,7 +33,7 @@ begin
   Application.CreateForm(TfrmRegister, frmRegister);
   Application.CreateForm(TfrmMain, frmMain);
   Application.CreateForm(TfrmGlavnaStrana, frmGlavnaStrana);
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfrmNalog, frmNalog);
   Application.CreateForm(TfrmGlavnaStranaAdmin, frmGlavnaStranaAdmin);
   Application.CreateForm(TfrmProdaja, frmProdaja);
   Application.CreateForm(TfrmNabavka, frmNabavka);

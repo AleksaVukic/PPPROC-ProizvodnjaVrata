@@ -4,9 +4,6 @@ Coordinates=184,10,85,58
 [toolbar]
 Coordinates=10,170,54,36
 
-[profslika]
-Coordinates=275,124,63,36
-
 [Back]
 Coordinates=10,10,43,58
 
@@ -26,7 +23,7 @@ Coordinates=10,124,86,36
 Coordinates=338,10,45,58
 
 []
-Coordinates=126,10,48,58
+Coordinates=275,124,63,36
 
 [p1]
 Coordinates=63,10,53,58

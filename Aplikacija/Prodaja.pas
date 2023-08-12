@@ -9,7 +9,6 @@ uses
 
 type
   TfrmProdaja = class(TForm)
-    profslika: TCircle;
     toolbar: TToolBar;
     logo: TImage;
     bottom_bar: TRectangle;
@@ -39,7 +38,6 @@ type
     Label6: TLabel;
     RoundRect2: TRoundRect;
     Label7: TLabel;
-    Image1: TImage;
     Vise1: TRoundRect;
     Label8: TLabel;
     Vise2: TRoundRect;
@@ -48,12 +46,14 @@ type
     Label10: TLabel;
     Vise4: TRoundRect;
     Label11: TLabel;
+    Image1: TImage;
     procedure KorpaClick(Sender: TObject);
     procedure Vise1Click(Sender: TObject);
     procedure Vise2Click(Sender: TObject);
     procedure Vise3Click(Sender: TObject);
     procedure Vise4Click(Sender: TObject);
     procedure BackClick(Sender: TObject);
+    procedure Image1Click(Sender: TObject);
 
 
   private
@@ -71,7 +71,7 @@ implementation
 
 {$R *.fmx}
 
-uses Korpa, Proizvod1,GlavnaStranaAdmin, Proizvod2, Proizvod3, Proizvod4;
+uses Korpa, Proizvod1,GlavnaStranaAdmin, Proizvod2, Proizvod3, Proizvod4, Nalog;
 
 procedure TfrmProdaja.BackClick(Sender: TObject);
 begin
@@ -80,6 +80,12 @@ self.Hide;
 
 end;
 
+
+procedure TfrmProdaja.Image1Click(Sender: TObject);
+begin
+frmNalog.show;
+self.hide;
+end;
 
 procedure TfrmProdaja.KorpaClick(Sender: TObject);
 begin
