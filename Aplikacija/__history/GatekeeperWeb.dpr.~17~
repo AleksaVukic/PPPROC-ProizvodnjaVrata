@@ -23,10 +23,7 @@ uses
   Proizvod3 in 'Proizvod3.pas' {frmProizvod3},
   Proizvod4 in 'Proizvod4.pas' {frmProizvod4},
   SobnaVrata in 'SobnaVrata.pas' {frmSobnaVrata},
-  DvokrilnaVrata in 'DvokrilnaVrata.pas' {frmDvokrilnaVrata},
-  VrataSigurnosna in 'VrataSigurnosna.pas' {frmSigurnosnaVrata},
-  VrataKlizna in 'VrataKlizna.pas' {frmKliznaVrata},
-  HarmonikaVrata in 'HarmonikaVrata.pas' {frmHarmonikaVrata};
+  DvokrilnaVrata in 'DvokrilnaVrata.pas' {frmDvokrilnaVrata};
 
 {$R *.res}
 
@@ -53,8 +50,5 @@ begin
   Application.CreateForm(TfrmProizvod4, frmProizvod4);
   Application.CreateForm(TfrmSobnaVrata, frmSobnaVrata);
   Application.CreateForm(TfrmDvokrilnaVrata, frmDvokrilnaVrata);
-  Application.CreateForm(TfrmSigurnosnaVrata, frmSigurnosnaVrata);
-  Application.CreateForm(TfrmKliznaVrata, frmKliznaVrata);
-  Application.CreateForm(TfrmHarmonikaVrata, frmHarmonikaVrata);
   Application.Run;
 end.
