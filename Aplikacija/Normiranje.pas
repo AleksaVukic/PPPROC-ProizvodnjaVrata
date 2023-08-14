@@ -17,6 +17,9 @@ type
     ListBoxItem5: TListBoxItem;
     procedure ListBoxItem1Click(Sender: TObject);
     procedure ListBoxItem2Click(Sender: TObject);
+    procedure ListBoxItem3Click(Sender: TObject);
+    procedure ListBoxItem4Click(Sender: TObject);
+    procedure ListBoxItem5Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -30,7 +33,7 @@ implementation
 {$R *.fmx}
 
 
-uses SobnaVrata, DvokrilnaVrata;
+uses SobnaVrata, DvokrilnaVrata, VrataSigurnosna, VrataKlizna, HarmonikaVrata;
 
 
 procedure TfrmNormiranje.ListBoxItem1Click(Sender: TObject);
@@ -41,6 +44,21 @@ end;
 procedure TfrmNormiranje.ListBoxItem2Click(Sender: TObject);
 begin
 frmDvokrilnaVrata.show;
+end;
+
+procedure TfrmNormiranje.ListBoxItem3Click(Sender: TObject);
+begin
+frmSigurnosnaVrata.show;
+end;
+
+procedure TfrmNormiranje.ListBoxItem4Click(Sender: TObject);
+begin
+frmKliznaVrata.show;
+end;
+
+procedure TfrmNormiranje.ListBoxItem5Click(Sender: TObject);
+begin
+frmHarmonikaVrata.show;
 end;
 
 end.

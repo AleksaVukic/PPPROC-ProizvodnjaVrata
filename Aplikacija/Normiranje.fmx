@@ -34,16 +34,19 @@ object frmNormiranje: TfrmNormiranje
       Position.Y = 38.000000000000000000
       TabOrder = 2
       Text = 'Sigurnosna vrata'
+      OnClick = ListBoxItem3Click
     end
     object ListBoxItem4: TListBoxItem
       Position.Y = 57.000000000000000000
       TabOrder = 3
       Text = 'Klizna vrata'
+      OnClick = ListBoxItem4Click
     end
     object ListBoxItem5: TListBoxItem
       Position.Y = 76.000000000000000000
       TabOrder = 4
       Text = 'Harmonika vrata'
+      OnClick = ListBoxItem5Click
     end
   end
 end
