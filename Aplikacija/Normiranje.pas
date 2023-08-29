@@ -5,7 +5,7 @@ interface
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.ListBox,
-  FMX.Layouts;
+  FMX.Layouts, FMX.Controls.Presentation, FMX.StdCtrls, FMX.Objects;
 
 type
   TfrmNormiranje = class(TForm)
@@ -15,6 +15,12 @@ type
     ListBoxItem3: TListBoxItem;
     ListBoxItem4: TListBoxItem;
     ListBoxItem5: TListBoxItem;
+    bottom_bar: TRectangle;
+    Back: TButton;
+    toolbar: TToolBar;
+    logo: TImage;
+    PROIZVODI: TLabel;
+    Image1: TImage;
     procedure ListBoxItem1Click(Sender: TObject);
     procedure ListBoxItem2Click(Sender: TObject);
     procedure ListBoxItem3Click(Sender: TObject);
