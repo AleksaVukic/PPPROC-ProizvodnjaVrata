@@ -82,4 +82,10 @@ object frmLogIn: TfrmLogIn
     Text = 'Registracija'
     OnClick = RegistracijaClick
   end
+  object UlogovanID: TLabel
+    Position.X = 608.000000000000000000
+    Position.Y = 456.000000000000000000
+    Text = '1'
+    TabOrder = 10
+  end
 end

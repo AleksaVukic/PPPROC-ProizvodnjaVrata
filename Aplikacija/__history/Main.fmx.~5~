@@ -1,0 +1,21 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Main'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object FDConnection: TFDConnection
+    Params.Strings = (
+      
+        'Database=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplik' +
+        'acija\Win32\Debug\proizvodnja_vrata_V2.db'
+      'DriverID=SQLite')
+    Left = 304
+    Top = 224
+  end
+end

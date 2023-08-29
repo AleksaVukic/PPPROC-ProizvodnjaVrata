@@ -4,6 +4,8 @@ object frmGlavnaStranaAdmin: TfrmGlavnaStranaAdmin
   Caption = 'frmGlavnaStranaAdmin'
   ClientHeight = 480
   ClientWidth = 640
+  Fill.Color = xFF80A19E
+  Fill.Kind = Solid
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -425,6 +427,7 @@ object frmGlavnaStranaAdmin: TfrmGlavnaStranaAdmin
     Position.Y = 16.000000000000000000
     TabOrder = 14
     Text = 'NALOG'
+    OnClick = nalogClick
   end
   object LabelGatekeeper: TLabel
     Position.X = 16.000000000000000000
@@ -505,7 +508,7 @@ object frmGlavnaStranaAdmin: TfrmGlavnaStranaAdmin
     Position.X = 280.000000000000000000
     Position.Y = 208.000000000000000000
     TabOrder = 16
-    Text = 'Button1'
+    Text = 'Prodavnica'
     OnClick = Button1Click
   end
 end

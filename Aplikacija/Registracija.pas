@@ -59,6 +59,12 @@ begin
   MyQuery := TFDQuery.Create(nil);
   try
     MyQuery.Connection := GlobalConnection;
+    MyQuery.SQL.Text := 'SELECT * FROM Nalog WHERE Email = :Email';
+    MyQuery.Params.ParamByName('Email').AsString := email.Text;
+    MyQuery.Open;
+    if MyQuery.IsEmpty then
+    begin
+
     MyQuery.SQL.Text :='INSERT INTO NALOG (IME,PREZIME,BRTELEFONA,EMAIL,SIFRA) VALUES (:ime, :prezime, :brtelefona, :email, :sifra)';
     MyQuery.ParamByName('ime').AsString := Ime.Text;
     MyQuery.ParamByName('prezime').AsString := Prezime.Text;
@@ -66,7 +72,10 @@ begin
     MyQuery.ParamByName('email').AsString := Email.Text;
     MyQuery.ParamByName('sifra').AsString := Sifra.Text;
     MyQuery.ExecSQL;
-
+    end else
+    begin
+      ShowMessage('Ovaj korisnik vec postoji');
+    end;
   finally
     MyQuery.Free;
   end;

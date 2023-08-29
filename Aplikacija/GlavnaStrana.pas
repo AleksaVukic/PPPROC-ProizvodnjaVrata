@@ -20,6 +20,9 @@ type
     Label4: TLabel;
     Image1: TImage;
     nalog: TButton;
+    Button1: TButton;
+    procedure nalogClick(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -33,7 +36,20 @@ implementation
 
 {$R *.fmx}
 
+uses Nalog,Prodaja;
 
 
+
+procedure TfrmGlavnaStrana.Button1Click(Sender: TObject);
+begin
+frmProdaja.show;
+self.hide;
+end;
+
+procedure TfrmGlavnaStrana.nalogClick(Sender: TObject);
+begin
+frmNalog.show;
+self.hide;
+end;
 
 end.

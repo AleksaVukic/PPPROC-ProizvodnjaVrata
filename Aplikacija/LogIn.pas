@@ -8,7 +8,7 @@ uses
   FMX.Controls.Presentation, FMX.Edit, FMX.StdCtrls, FireDAC.Stan.Intf,
   FireDAC.Stan.Option, FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf,
   FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys,
-  FireDAC.FMXUI.Wait, Data.DB, FireDAC.Comp.Client;
+  FireDAC.FMXUI.Wait, Data.DB, FireDAC.Comp.Client,FireDAC.Stan.Param;
 
 type
   TfrmLogIn = class(TForm)
@@ -21,6 +21,7 @@ type
     Sifra_Label: TLabel;
     Prijava: TButton;
     Registracija: TButton;
+    UlogovanID: TLabel;
     procedure RegistracijaClick(Sender: TObject);
     procedure PrijavaClick(Sender: TObject);
 
@@ -37,7 +38,7 @@ implementation
 
 {$R *.fmx}
 
-uses Registracija,Main,GlavnaStrana,GlavnaStranaAdmin;
+uses BackgroundThread,Registracija,Main,GlavnaStrana,GlavnaStranaAdmin,Nalog;
 
 procedure TfrmLogIn.PrijavaClick(Sender: TObject);
 begin
@@ -53,16 +54,17 @@ var
       MyQuery.Params.ParamByName('Sifra').AsString := Sifra.Text;
       MyQuery.Open;
 
-      if Email.Text = ('admin@gmail.com') then
+      if (Email.Text = ('admin@gmail.com'))and (Sifra.Text = ('admin')) then
       begin
+         TMyBackgroundThread.Create;
+         UlogovanID.Text := MyQuery.FieldByName('NalogID').AsString;
          frmGlavnaStranaAdmin.Show;
          self.hide;
       end
       else if not MyQuery.IsEmpty then
       begin
-      var
-        UlogovaniKorisnikID := MyQuery.FieldByName('NalogID').AsInteger;
-
+        TMyBackgroundThread.Create;
+        UlogovanID.Text := MyQuery.FieldByName('NalogID').AsString;
         frmGlavnaStrana.Show;
         self.hide;
       end

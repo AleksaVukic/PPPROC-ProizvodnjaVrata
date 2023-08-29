@@ -40,6 +40,7 @@ type
     procedure MenuItem6Click(Sender: TObject);
     procedure MenuItem7Click(Sender: TObject);
     procedure MenuItem8Click(Sender: TObject);
+    procedure nalogClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -54,7 +55,7 @@ implementation
 
 {$R *.fmx}
 
-uses Prodaja,Nabavka,Podsetnik,Magacin,Cenovnik,Knjigovodjstvo,Pravna,Normiranje,Proizvodnja;
+uses Nalog,Prodaja,Nabavka,Podsetnik,Magacin,Cenovnik,Knjigovodjstvo,Pravna,Normiranje,Proizvodnja;
 
 
 
@@ -102,6 +103,12 @@ end;
 procedure TfrmGlavnaStranaAdmin.MenuItem8Click(Sender: TObject);
 begin
 frmProizvodnja.show;
+end;
+
+procedure TfrmGlavnaStranaAdmin.nalogClick(Sender: TObject);
+begin
+frmNalog.show;
+self.hide;
 end;
 
 end.
