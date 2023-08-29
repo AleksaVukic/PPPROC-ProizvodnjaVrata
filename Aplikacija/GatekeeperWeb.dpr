@@ -26,7 +26,8 @@ uses
   DvokrilnaVrata in 'DvokrilnaVrata.pas' {frmDvokrilnaVrata},
   VrataSigurnosna in 'VrataSigurnosna.pas' {frmSigurnosnaVrata},
   VrataKlizna in 'VrataKlizna.pas' {frmKliznaVrata},
-  HarmonikaVrata in 'HarmonikaVrata.pas' {frmHarmonikaVrata};
+  HarmonikaVrata in 'HarmonikaVrata.pas' {frmHarmonikaVrata},
+  BackgroundThread in 'BackgroundThread.pas';
 
 {$R *.res}
 
