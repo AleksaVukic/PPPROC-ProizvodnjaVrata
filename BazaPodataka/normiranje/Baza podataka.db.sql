@@ -36,9 +36,9 @@ CREATE TABLE IF NOT EXISTS "Normativ proizvoda" (
 	"Kvalitet i standardi"	TEXT,
 	"Tehnicka dokumentacija"	TEXT,
 	"ID proizvoda"	INTEGER,
-	PRIMARY KEY("ID materijala","ID proizvoda"),
+	FOREIGN KEY("ID proizvoda") REFERENCES "Sifarnik proizvoda",
 	FOREIGN KEY("ID materijala") REFERENCES "Sifarnik materijala"("ID materijala"),
-	FOREIGN KEY("ID proizvoda") REFERENCES "Sifarnik proizvoda"
+	PRIMARY KEY("ID materijala","ID proizvoda")
 );
 CREATE TABLE IF NOT EXISTS "Sifarnik proizvoda" (
 	"ID proizvoda"	INTEGER NOT NULL UNIQUE,
@@ -46,11 +46,12 @@ CREATE TABLE IF NOT EXISTS "Sifarnik proizvoda" (
 	"Naziv"	TEXT,
 	"Dimenzija"	TEXT,
 	"Jedinica mere"	TEXT,
-	"Stok_materijal"	INTEGER,
-	"Boja"	INTEGER,
-	"Materijal krila"	INTEGER,
-	"Dimenzija brave"	INTEGER,
-	"Materijal brave"	INTEGER,
+	"Boja krila"	TEXT,
+	"Materijal krila"	TEXT,
+	"Stok_materijal"	TEXT,
+	"Boja štoka"	TEXT,
+	"Okov"	TEXT,
+	"Materijal brave"	TEXT,
 	PRIMARY KEY("ID proizvoda" AUTOINCREMENT)
 );
 INSERT INTO "Operacije" VALUES (1,'','',NULL,NULL,NULL,NULL,NULL);
@@ -98,13 +99,9 @@ INSERT INTO "Normativ proizvoda" VALUES (8,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO "Normativ proizvoda" VALUES (9,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO "Normativ proizvoda" VALUES (10,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO "Normativ proizvoda" VALUES (11,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO "Sifarnik proizvoda" VALUES (1,'sif1','Sobna vrata','200x75','cm',NULL,NULL,NULL,NULL,NULL);
-INSERT INTO "Sifarnik proizvoda" VALUES (2,'sif2','Sobna vrata sa jednim otvorom','200x75','cm',NULL,NULL,NULL,NULL,NULL);
-INSERT INTO "Sifarnik proizvoda" VALUES (3,'sif3','Sobna vrata sa dva otvora','200x75','cm',NULL,NULL,NULL,NULL,NULL);
-INSERT INTO "Sifarnik proizvoda" VALUES (4,'sif4','Sobna vrata sa tri otvora','200x75','cm',NULL,NULL,NULL,NULL,NULL);
-INSERT INTO "Sifarnik proizvoda" VALUES (5,'sif5','Dvokrilna vrata','220x140','cm',NULL,NULL,NULL,NULL,NULL);
-INSERT INTO "Sifarnik proizvoda" VALUES (6,'sif6','Trokrilna vrata','220x240','cm',NULL,NULL,NULL,NULL,NULL);
-INSERT INTO "Sifarnik proizvoda" VALUES (7,'sif7','Sigurnosna vrata','200x75','cm',NULL,NULL,NULL,NULL,NULL);
-INSERT INTO "Sifarnik proizvoda" VALUES (8,'sif8','Klizna vrata','190x80','cm',NULL,NULL,NULL,NULL,NULL);
-INSERT INTO "Sifarnik proizvoda" VALUES (9,'sif9','Harmonika vrata','203x88','cm',NULL,NULL,NULL,NULL,NULL);
+INSERT INTO "Sifarnik proizvoda" VALUES (1,'sif1','Sobna vrata','200x75','cm',' braon','prirodna bukva','drvo jasen','bež','Hafele šarke i AGB brava','čelik');
+INSERT INTO "Sifarnik proizvoda" VALUES (5,'sif5','Dvokrilna vrata','220x140','cm','bela','medijapan','medijapan','bela','Hafele šarke i AGB brava','čelik');
+INSERT INTO "Sifarnik proizvoda" VALUES (7,'sif7','Sigurnosna vrata','200x75','cm','crna','metal obložen medijapanom','medijapan i lim','bela','Podesive AGB šarke i brava','Aluminijum');
+INSERT INTO "Sifarnik proizvoda" VALUES (8,'sif8','Klizna vrata','190x100','cm','siva','Eloksirani aluminijum','aluminijum','bela','2 lajne 2m širine','/');
+INSERT INTO "Sifarnik proizvoda" VALUES (9,'sif9','Harmonika vrata','203x88','cm','braon','puno drvo sa segmentima od furnirane šperploče','2 AL šine po kojima klize','crna lakirana','metalna ručka i braon segmenti','čelik');
 COMMIT;

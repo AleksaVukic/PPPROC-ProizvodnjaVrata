@@ -1,0 +1,51 @@
+unit DvokrilnaVrata;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.Controls.Presentation, FMX.StdCtrls, FMX.Objects, System.Rtti,
+  FMX.Grid.Style, FMX.ScrollBox, FMX.Grid;
+
+type
+  TfrmDvokrilnaVrata = class(TForm)
+    bottom_bar: TRectangle;
+    Back: TButton;
+    toolbar: TToolBar;
+    logo: TImage;
+    DvokrilnaVrata: TLabel;
+    Image1: TImage;
+    StringGrid1: TStringGrid;
+    Button1: TButton;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmDvokrilnaVrata: TfrmDvokrilnaVrata;
+
+implementation
+
+{$R *.fmx}
+
+procedure TfrmDvokrilnaVrata.Button1Click(Sender: TObject);
+begin
+  StringGrid1.RowCount := 3; // Number of rows
+  StringGrid1.Cells[0, 0] := 'First Name';
+  StringGrid1.Cells[1, 0] := 'Last Name';
+  StringGrid1.Cells[2, 0] := 'Age';
+
+  StringGrid1.Cells[0, 1] := 'John';
+  StringGrid1.Cells[1, 1] := 'Doe';
+  StringGrid1.Cells[2, 1] := '30';
+
+  StringGrid1.Cells[0, 2] := 'Jane';
+  StringGrid1.Cells[1, 2] := 'Smith';
+  StringGrid1.Cells[2, 2] := '25';
+end;
+
+end.

@@ -5,7 +5,11 @@ interface
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
-  FMX.Controls.Presentation, FMX.StdCtrls, FMX.Objects;
+  FMX.Controls.Presentation, FMX.Edit, FMX.StdCtrls, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf,
+  FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys,
+  FireDAC.FMXUI.Wait, Data.DB, FireDAC.Comp.Client,FireDAC.Stan.Param,
+  System.Rtti, FMX.Grid.Style, FMX.ScrollBox, FMX.Grid, FMX.Objects;
 
 type
   TfrmSigurnosnaVrata = class(TForm)
@@ -15,6 +19,21 @@ type
     logo: TImage;
     SigurnosnaVrata: TLabel;
     Image1: TImage;
+    StringGrid1: TStringGrid;
+    StringColumn1: TStringColumn;
+    StringColumn2: TStringColumn;
+    StringColumn3: TStringColumn;
+    StringColumn4: TStringColumn;
+    StringColumn5: TStringColumn;
+    StringColumn6: TStringColumn;
+    StringColumn7: TStringColumn;
+    StringColumn8: TStringColumn;
+    StringColumn9: TStringColumn;
+    StringColumn10: TStringColumn;
+    StringColumn11: TStringColumn;
+    Refresh: TButton;
+    procedure RefreshClick(Sender: TObject);
+    procedure BackClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -27,5 +46,97 @@ var
 implementation
 
 {$R *.fmx}
+
+uses Main,Normiranje;
+
+procedure TfrmSigurnosnaVrata.BackClick(Sender: TObject);
+begin
+frmNormiranje.show;
+self.hide;
+end;
+
+procedure TfrmSigurnosnaVrata.RefreshClick(Sender: TObject);
+begin
+var
+  MyQuery: TFDQuery;
+var
+  IDProizvoda: string;
+var
+  Sifra: string;
+var
+  Naziv: string;
+var
+  Dimenzija: string;
+var
+  JedinicaMere: string;
+var
+  BojaKrila: string;
+var
+  MaterijalKrila: string;
+var
+  StokMaterijal: string;
+var
+  BojaStoka: string;
+var
+  Okov: string;
+var
+  MaterijalBrave: string;
+
+
+  begin
+    MyQuery := TFDQuery.Create(nil);
+    try
+      MyQuery.Connection := GlobalConnection;
+      MyQuery.SQL.Text := 'SELECT * FROM SifarnikProizvoda WHERE Naziv = "Sigurnosna vrata"';
+      MyQuery.Open;
+
+      if not MyQuery.IsEmpty then
+      begin
+      IDProizvoda := MyQuery.FieldByName('ID proizvoda').AsString;
+      Sifra := MyQuery.FieldByName('sifra').AsString;
+      Naziv := MyQuery.FieldByName('Naziv').AsString;
+      Dimenzija := MyQuery.FieldByName('Dimenzija').AsString;
+      JedinicaMere := MyQuery.FieldByName('Jedinica mere').AsString;
+      BojaKrila := MyQuery.FieldByName('Boja krila').AsString;
+      MaterijalKrila := MyQuery.FieldByName('Materijal krila').AsString;
+      StokMaterijal := MyQuery.FieldByName('Stok_materijal').AsString;
+      BojaStoka := MyQuery.FieldByName('Boja stoka').AsString;
+      Okov := MyQuery.FieldByName('Okov').AsString;
+      MaterijalBrave := MyQuery.FieldByName('Materijal brave').AsString;
+
+      StringGrid1.RowCount := 2; // Number of rows
+      StringGrid1.Cells[0, 0] := 'ID Proizvoda';
+      StringGrid1.Cells[1, 0] := 'Sifra';
+      StringGrid1.Cells[2, 0] := 'Naziv';
+      StringGrid1.Cells[3, 0] := 'Dimenzija';
+      StringGrid1.Cells[4, 0] := 'Jedinica Mere';
+      StringGrid1.Cells[5, 0] := 'Boja Krila';
+      StringGrid1.Cells[6, 0] := 'Materijal Krila';
+      StringGrid1.Cells[7, 0] := 'Stok Meterijal';
+      StringGrid1.Cells[8, 0] := 'Boja Stoka';
+      StringGrid1.Cells[9, 0] := 'Okov';
+      StringGrid1.Cells[10, 0] := 'Materijal brave';
+
+      StringGrid1.Cells[0, 1] := IDProizvoda;
+      StringGrid1.Cells[1, 1] := Sifra;
+      StringGrid1.Cells[2, 1] := Naziv;
+      StringGrid1.Cells[3, 1] := Dimenzija;
+      StringGrid1.Cells[4, 1] := JedinicaMere;
+      StringGrid1.Cells[5, 1] := BojaKrila;
+      StringGrid1.Cells[6, 1] := MaterijalKrila;
+      StringGrid1.Cells[7, 1] := StokMaterijal;
+      StringGrid1.Cells[8, 1] := BojaStoka;
+      StringGrid1.Cells[9, 1] := Okov;
+      StringGrid1.Cells[10, 1] := MaterijalBrave;
+
+      end;
+
+    finally
+     MyQuery.Free;
+    end;
+
+
+  end;
+end;
 
 end.
