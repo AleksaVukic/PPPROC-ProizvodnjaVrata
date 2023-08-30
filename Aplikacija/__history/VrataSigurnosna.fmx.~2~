@@ -1,9 +1,11 @@
-object frmSobnaVrata: TfrmSobnaVrata
+object frmSigurnosnaVrata: TfrmSigurnosnaVrata
   Left = 0
   Top = 0
-  Caption = 'Sobna Vrata'
+  Caption = 'Sigurnosna vrata'
   ClientHeight = 480
   ClientWidth = 640
+  Fill.Color = xFF80A19E
+  Fill.Kind = Solid
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -420,16 +422,16 @@ object frmSobnaVrata: TfrmSobnaVrata
       Size.Height = 50.000000000000000000
       Size.PlatformDefault = False
     end
-    object SobnaVrata: TLabel
+    object SigurnosnaVrata: TLabel
       Align = Center
       StyledSettings = [Family, FontColor]
       Margins.Right = 50.000000000000000000
-      Size.Width = 153.000000000000000000
+      Size.Width = 188.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
       TextSettings.Font.Size = 20.000000000000000000
       TextSettings.Font.StyleExt = {00070000000000000004000000}
-      Text = 'SobnaVrata'
+      Text = 'SigurnosnaVrata'
       TabOrder = 2
     end
     object Image1: TImage

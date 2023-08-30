@@ -4,6 +4,8 @@ object frmSobnaVrata: TfrmSobnaVrata
   Caption = 'Sobna Vrata'
   ClientHeight = 480
   ClientWidth = 640
+  Fill.Color = xFF80A19E
+  Fill.Kind = Solid
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]

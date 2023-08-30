@@ -22,6 +22,7 @@ object frmSobnaVrata: TfrmSobnaVrata
       Position.Y = 20.000000000000000000
       TabOrder = 1
       Text = 'Back'
+      OnClick = BackClick
     end
   end
   object toolbar: TToolBar
@@ -431,7 +432,7 @@ object frmSobnaVrata: TfrmSobnaVrata
       Size.PlatformDefault = False
       TextSettings.Font.Size = 20.000000000000000000
       TextSettings.Font.StyleExt = {00070000000000000004000000}
-      Text = 'SobnaVrata'
+      Text = 'Sobna Vrata'
       TabOrder = 2
     end
     object Image1: TImage
@@ -6122,6 +6123,47 @@ object frmSobnaVrata: TfrmSobnaVrata
       Size.Width = 33.000000000000000000
       Size.Height = 33.000000000000000000
       Size.PlatformDefault = False
+    end
+  end
+  object Refresh: TButton
+    Position.X = 544.000000000000000000
+    Position.Y = 216.000000000000000000
+    TabOrder = 1
+    Text = 'Refresh'
+    OnClick = RefreshClick
+  end
+  object StringGrid1: TStringGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.Y = 80.000000000000000000
+    Size.Width = 641.000000000000000000
+    Size.Height = 100.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    RowCount = 2
+    Viewport.Width = 637.000000000000000000
+    Viewport.Height = 59.000000000000000000
+    object StringColumn1: TStringColumn
+    end
+    object StringColumn2: TStringColumn
+    end
+    object StringColumn3: TStringColumn
+    end
+    object StringColumn4: TStringColumn
+    end
+    object StringColumn5: TStringColumn
+    end
+    object StringColumn6: TStringColumn
+    end
+    object StringColumn7: TStringColumn
+    end
+    object StringColumn8: TStringColumn
+    end
+    object StringColumn9: TStringColumn
+    end
+    object StringColumn10: TStringColumn
+    end
+    object StringColumn11: TStringColumn
     end
   end
 end

@@ -13,7 +13,7 @@ object frmNormiranje: TfrmNormiranje
   DesignerMasterStyle = 0
   object ListBox1: TListBox
     Position.X = 208.000000000000000000
-    Position.Y = 208.000000000000000000
+    Position.Y = 144.000000000000000000
     TabOrder = 1
     DisableFocusEffect = True
     DefaultItemStyles.ItemStyle = ''
