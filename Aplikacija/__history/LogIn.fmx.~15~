@@ -8,7 +8,7 @@ object frmLogIn: TfrmLogIn
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
-  object Edit1: TEdit
+  object Email: TEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
     TabOrder = 1
     Position.X = 200.000000000000000000
@@ -30,7 +30,7 @@ object frmLogIn: TfrmLogIn
     Size.PlatformDefault = False
     TabOrder = 4
   end
-  object Label1: TLabel
+  object Title: TLabel
     Position.X = 272.000000000000000000
     Position.Y = 16.000000000000000000
     Scale.X = 2.000000000000000000
@@ -41,7 +41,7 @@ object frmLogIn: TfrmLogIn
     Text = 'LOG IN'
     TabOrder = 3
   end
-  object Edit2: TEdit
+  object Sifra: TEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
     TabOrder = 0
     Position.X = 200.000000000000000000
@@ -50,7 +50,7 @@ object frmLogIn: TfrmLogIn
     Size.Height = 22.000000000000000000
     Size.PlatformDefault = False
   end
-  object Label2: TLabel
+  object Email_Label: TLabel
     Position.X = 144.000000000000000000
     Position.Y = 176.000000000000000000
     Size.Width = 49.000000000000000000
@@ -59,13 +59,33 @@ object frmLogIn: TfrmLogIn
     Text = 'Email:'
     TabOrder = 7
   end
-  object Label3: TLabel
+  object Sifra_Label: TLabel
     Position.X = 144.000000000000000000
     Position.Y = 216.000000000000000000
     Size.Width = 49.000000000000000000
     Size.Height = 17.000000000000000000
     Size.PlatformDefault = False
-    Text = 'Email:'
+    Text = 'Sifra:'
     TabOrder = 6
+  end
+  object Prijava: TButton
+    Position.X = 352.000000000000000000
+    Position.Y = 256.000000000000000000
+    TabOrder = 8
+    Text = 'Prijava'
+    OnClick = PrijavaClick
+  end
+  object Registracija: TButton
+    Position.X = 16.000000000000000000
+    Position.Y = 448.000000000000000000
+    TabOrder = 9
+    Text = 'Registracija'
+    OnClick = RegistracijaClick
+  end
+  object UlogovanID: TLabel
+    Position.X = 608.000000000000000000
+    Position.Y = 456.000000000000000000
+    Text = '1'
+    TabOrder = 10
   end
 end
