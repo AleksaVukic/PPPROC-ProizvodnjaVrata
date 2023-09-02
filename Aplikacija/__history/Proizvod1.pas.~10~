@@ -47,7 +47,6 @@ type
     BACK: TLabel;
     procedure RoundRect12Click(Sender: TObject);
     procedure RoundRect13Click(Sender: TObject);
-    procedure RoundRect1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -60,8 +59,6 @@ var
 implementation
 
 {$R *.fmx}
-
-uses Prodaja;
 
 
 procedure TfrmProizvod1.RoundRect12Click(Sender: TObject);
@@ -80,10 +77,6 @@ RoundRect12.Fill.Color := RGBColor1;
 end else
 begin
 RoundRect12.Fill.Color := RGBColor2;
-end;
-if RoundRect13.Fill.Color = RGBColor1 then
-begin
-  RoundRect13.Fill.Color:= RGBColor2;
 end;
 end;
 
@@ -105,16 +98,6 @@ end else
 begin
 RoundRect13.Fill.Color := RGBColor2;
 end;
-if RoundRect12.Fill.Color = RGBColor1 then
-begin
-  RoundRect12.Fill.Color:= RGBColor2;
-end;
-end;
-
-procedure TfrmProizvod1.RoundRect1Click(Sender: TObject);
-begin
-frmProdaja.show;
-self.hide;
 end;
 
 end.

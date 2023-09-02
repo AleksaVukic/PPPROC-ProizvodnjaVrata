@@ -591,7 +591,6 @@ object frmProizvod3: TfrmProizvod3
     Size.Width = 48.000000000000000000
     Size.Height = 33.000000000000000000
     Size.PlatformDefault = False
-    OnClick = RoundRect12Click
     object Label11: TLabel
       Align = Center
       StyledSettings = [Family, FontColor]
@@ -610,7 +609,6 @@ object frmProizvod3: TfrmProizvod3
     Size.Width = 48.000000000000000000
     Size.Height = 33.000000000000000000
     Size.PlatformDefault = False
-    OnClick = RoundRect13Click
     object Label12: TLabel
       Align = Center
       StyledSettings = [Family, FontColor]
@@ -1099,12 +1097,11 @@ object frmProizvod3: TfrmProizvod3
     end
   end
   object RoundRect1: TRoundRect
-    Position.X = 527.000000000000000000
+    Position.X = 479.000000000000000000
     Position.Y = 72.000000000000000000
     Size.Width = 161.000000000000000000
     Size.Height = 50.000000000000000000
     Size.PlatformDefault = False
-    OnClick = RoundRect1Click
   end
   object BACK: TLabel
     StyledSettings = [Family, FontColor]

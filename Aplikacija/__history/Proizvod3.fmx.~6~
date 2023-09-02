@@ -591,7 +591,6 @@ object frmProizvod3: TfrmProizvod3
     Size.Width = 48.000000000000000000
     Size.Height = 33.000000000000000000
     Size.PlatformDefault = False
-    OnClick = RoundRect12Click
     object Label11: TLabel
       Align = Center
       StyledSettings = [Family, FontColor]
@@ -610,7 +609,6 @@ object frmProizvod3: TfrmProizvod3
     Size.Width = 48.000000000000000000
     Size.Height = 33.000000000000000000
     Size.PlatformDefault = False
-    OnClick = RoundRect13Click
     object Label12: TLabel
       Align = Center
       StyledSettings = [Family, FontColor]
@@ -1097,26 +1095,5 @@ object frmProizvod3: TfrmProizvod3
       Text = 'Visina'
       TabOrder = 0
     end
-  end
-  object RoundRect1: TRoundRect
-    Position.X = 527.000000000000000000
-    Position.Y = 72.000000000000000000
-    Size.Width = 161.000000000000000000
-    Size.Height = 50.000000000000000000
-    Size.PlatformDefault = False
-    OnClick = RoundRect1Click
-  end
-  object BACK: TLabel
-    StyledSettings = [Family, FontColor]
-    Position.X = 544.000000000000000000
-    Position.Y = 88.000000000000000000
-    Scale.X = 1.500000000000000000
-    Scale.Y = 1.299999952316284000
-    Size.Width = 53.000000000000000000
-    Size.Height = 17.000000000000000000
-    Size.PlatformDefault = False
-    StyleLookup = 'listboxitemlabel'
-    Text = 'Back'
-    TabOrder = 18
   end
 end

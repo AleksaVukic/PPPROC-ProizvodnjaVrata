@@ -1085,7 +1085,6 @@ object frmProizvod1: TfrmProizvod1
     Size.Width = 48.000000000000000000
     Size.Height = 33.000000000000000000
     Size.PlatformDefault = False
-    OnClick = RoundRect13Click
     object Label12: TLabel
       Align = Center
       StyledSettings = [Family, FontColor]
@@ -1104,7 +1103,6 @@ object frmProizvod1: TfrmProizvod1
     Size.Width = 161.000000000000000000
     Size.Height = 50.000000000000000000
     Size.PlatformDefault = False
-    OnClick = RoundRect1Click
   end
   object BACK: TLabel
     StyledSettings = [Family, FontColor]
@@ -1117,6 +1115,6 @@ object frmProizvod1: TfrmProizvod1
     Size.PlatformDefault = False
     StyleLookup = 'listboxitemlabel'
     Text = 'Back'
-    TabOrder = 18
+    TabOrder = 19
   end
 end

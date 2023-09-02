@@ -1,7 +1,7 @@
-object frmProizvod3: TfrmProizvod3
+object frmProizvod2: TfrmProizvod2
   Left = 0
   Top = 0
-  Caption = 'Staklo iz delova'
+  Caption = 'Staklena vrata'
   ClientHeight = 480
   ClientWidth = 640
   Fill.Color = xFF80A19E
@@ -546,7 +546,7 @@ object frmProizvod3: TfrmProizvod3
     TextSettings.Font.Size = 18.000000000000000000
     TextSettings.Font.StyleExt = {00070000000000000004000000}
     Text = 'X'
-    TabOrder = 17
+    TabOrder = 16
   end
   object Naziv: TRoundRect
     Fill.Color = xFF709B8C
@@ -564,7 +564,7 @@ object frmProizvod3: TfrmProizvod3
       Size.PlatformDefault = False
       TextSettings.Font.Size = 16.000000000000000000
       TextSettings.Font.StyleExt = {00070000000000000004000000}
-      Text = 'Staklo iz delova'
+      Text = 'Staklena vrata'
       TabOrder = 0
     end
     object Label4: TLabel
@@ -573,7 +573,7 @@ object frmProizvod3: TfrmProizvod3
       Size.Width = 41.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
-      Text = '(P - 3)'
+      Text = '(P - 2)'
       TabOrder = 1
     end
   end
@@ -591,7 +591,6 @@ object frmProizvod3: TfrmProizvod3
     Size.Width = 48.000000000000000000
     Size.Height = 33.000000000000000000
     Size.PlatformDefault = False
-    OnClick = RoundRect12Click
     object Label11: TLabel
       Align = Center
       StyledSettings = [Family, FontColor]
@@ -610,7 +609,6 @@ object frmProizvod3: TfrmProizvod3
     Size.Width = 48.000000000000000000
     Size.Height = 33.000000000000000000
     Size.PlatformDefault = False
-    OnClick = RoundRect13Click
     object Label12: TLabel
       Align = Center
       StyledSettings = [Family, FontColor]
@@ -678,15 +676,15 @@ object frmProizvod3: TfrmProizvod3
     Size.Height = 40.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
-    object Label1: TLabel
+    object Label8: TLabel
       Align = Center
       StyledSettings = [Family, FontColor]
-      Size.Width = 169.000000000000000000
+      Size.Width = 157.000000000000000000
       Size.Height = 16.000000000000000000
       Size.PlatformDefault = False
       TextSettings.Font.Size = 18.000000000000000000
       TextSettings.Font.StyleExt = {00070000000000000004000000}
-      Text = 'STAKLO IZ DELOVA'
+      Text = 'STAKLENA VRATA'
       TabOrder = 0
     end
     object logo1: TImage
@@ -1087,7 +1085,7 @@ object frmProizvod3: TfrmProizvod3
     Size.Width = 80.000000000000000000
     Size.Height = 32.000000000000000000
     Size.PlatformDefault = False
-    object Label8: TLabel
+    object Label14: TLabel
       Align = Center
       StyledSettings = [Family, Size, FontColor]
       Size.Width = 34.000000000000000000
@@ -1097,26 +1095,5 @@ object frmProizvod3: TfrmProizvod3
       Text = 'Visina'
       TabOrder = 0
     end
-  end
-  object RoundRect1: TRoundRect
-    Position.X = 527.000000000000000000
-    Position.Y = 72.000000000000000000
-    Size.Width = 161.000000000000000000
-    Size.Height = 50.000000000000000000
-    Size.PlatformDefault = False
-    OnClick = RoundRect1Click
-  end
-  object BACK: TLabel
-    StyledSettings = [Family, FontColor]
-    Position.X = 544.000000000000000000
-    Position.Y = 88.000000000000000000
-    Scale.X = 1.500000000000000000
-    Scale.Y = 1.299999952316284000
-    Size.Width = 53.000000000000000000
-    Size.Height = 17.000000000000000000
-    Size.PlatformDefault = False
-    StyleLookup = 'listboxitemlabel'
-    Text = 'Back'
-    TabOrder = 18
   end
 end

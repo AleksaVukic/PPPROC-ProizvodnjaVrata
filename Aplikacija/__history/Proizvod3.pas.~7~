@@ -1,4 +1,4 @@
-unit Proizvod4;
+unit Proizvod3;
 
 interface
 
@@ -8,7 +8,7 @@ uses
   FMX.Objects, FMX.Controls.Presentation;
 
 type
-  TfrmProizvod4 = class(TForm)
+  TfrmProizvod3 = class(TForm)
     Boja: TRoundRect;
     Label6: TLabel;
     Cena: TRoundRect;
@@ -45,9 +45,6 @@ type
     Label8: TLabel;
     RoundRect1: TRoundRect;
     BACK: TLabel;
-    procedure RoundRect13Click(Sender: TObject);
-    procedure RoundRect12Click(Sender: TObject);
-    procedure RoundRect1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -55,65 +52,12 @@ type
   end;
 
 var
-  frmProizvod4: TfrmProizvod4;
+  frmProizvod3: TfrmProizvod3;
 
 implementation
 
 {$R *.fmx}
-uses Prodaja;
 
 
-procedure TfrmProizvod4.RoundRect12Click(Sender: TObject);
-var
-RGBColor1: TAlphaColor;
-var
-RGBColor2: TAlphaColor;
-
-begin
-RGBColor1 := $FF709B8C;
-RGBColor2 := $FFE0E0E0;
-
-if RoundRect12.Fill.Color <> RGBColor1 then
-begin
-RoundRect12.Fill.Color := RGBColor1;
-end else
-begin
-RoundRect12.Fill.Color := RGBColor2;
-end;
-if RoundRect13.Fill.Color = RGBColor1 then
-begin
-  RoundRect13.Fill.Color:= RGBColor2;
-end;
-end;
-
-
-procedure TfrmProizvod4.RoundRect13Click(Sender: TObject);
-var
-RGBColor1: TAlphaColor;
-var
-RGBColor2: TAlphaColor;
-
-begin
-RGBColor1 := $FF709B8C;
-RGBColor2 := $FFE0E0E0;
-
-if RoundRect13.Fill.Color <> RGBColor1 then
-begin
-RoundRect13.Fill.Color := RGBColor1;
-end else
-begin
-RoundRect13.Fill.Color := RGBColor2;
-end;
-if RoundRect12.Fill.Color = RGBColor1 then
-begin
-  RoundRect12.Fill.Color:= RGBColor2;
-end;
-end;
-
-procedure TfrmProizvod4.RoundRect1Click(Sender: TObject);
-begin
-frmProdaja.show;
-self.hide;
-end;
 
 end.

@@ -1,4 +1,4 @@
-unit Proizvod1;
+unit Proizvod2;
 
 interface
 
@@ -7,7 +7,7 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs;
 
 type
-  TfrmProizvod1 = class(TForm)
+  TfrmProizvod2 = class(TForm)
   private
     { Private declarations }
   public
@@ -15,7 +15,7 @@ type
   end;
 
 var
-  frmProizvod1: TfrmProizvod1;
+  frmProizvod2: TfrmProizvod2;
 
 implementation
 

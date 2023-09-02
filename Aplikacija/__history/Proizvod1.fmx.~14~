@@ -1104,7 +1104,6 @@ object frmProizvod1: TfrmProizvod1
     Size.Width = 161.000000000000000000
     Size.Height = 50.000000000000000000
     Size.PlatformDefault = False
-    OnClick = RoundRect1Click
   end
   object BACK: TLabel
     StyledSettings = [Family, FontColor]

@@ -1,52 +1,52 @@
-unit Proizvod4;
+unit Proizvod1;
 
 interface
 
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
-  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
-  FMX.Objects, FMX.Controls.Presentation;
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.Controls.Presentation, FMX.StdCtrls, FMX.Objects;
 
 type
-  TfrmProizvod4 = class(TForm)
-    Boja: TRoundRect;
-    Label6: TLabel;
+  TfrmProizvod1 = class(TForm)
+    ToolBar1: TToolBar;
+    Label1: TLabel;
+    logo1: TImage;
+    Naziv: TRoundRect;
     Cena: TRoundRect;
     RoundRect3: TRoundRect;
+    Boja: TRoundRect;
+    Kolicina: TRoundRect;
+    RoundRect6: TRoundRect;
+    Stok: TRoundRect;
+    RoundRect8: TRoundRect;
+    Visina: TRoundRect;
+    RoundRect10: TRoundRect;
+    Sirina: TRoundRect;
+    RoundRect12: TRoundRect;
+    Korpa: TRoundRect;
+    Label2: TLabel;
+    Image1: TImage;
+    Label3: TLabel;
+    Label4: TLabel;
     Label5: TLabel;
+    Label6: TLabel;
     Circle1: TCircle;
     Circle2: TCircle;
     Circle3: TCircle;
     Circle4: TCircle;
-    Kolicina: TRoundRect;
-    Label13: TLabel;
-    Korpa: TRoundRect;
-    Label2: TLabel;
-    Image1: TImage;
-    Label9: TLabel;
-    Naziv: TRoundRect;
-    Label3: TLabel;
-    Label4: TLabel;
-    RoundRect10: TRoundRect;
-    RoundRect12: TRoundRect;
-    Label11: TLabel;
-    RoundRect13: TRoundRect;
-    Label12: TLabel;
-    RoundRect6: TRoundRect;
-    RoundRect8: TRoundRect;
-    Sirina: TRoundRect;
     Label7: TLabel;
-    Stok: TRoundRect;
-    Label10: TLabel;
-    ToolBar1: TToolBar;
-    Label1: TLabel;
-    logo1: TImage;
-    Visina: TRoundRect;
     Label8: TLabel;
+    Label9: TLabel;
+    Label10: TLabel;
+    RoundRect13: TRoundRect;
+    Label11: TLabel;
+    Label12: TLabel;
+    Label13: TLabel;
     RoundRect1: TRoundRect;
     BACK: TLabel;
-    procedure RoundRect13Click(Sender: TObject);
     procedure RoundRect12Click(Sender: TObject);
+    procedure RoundRect13Click(Sender: TObject);
     procedure RoundRect1Click(Sender: TObject);
   private
     { Private declarations }
@@ -55,15 +55,16 @@ type
   end;
 
 var
-  frmProizvod4: TfrmProizvod4;
+  frmProizvod1: TfrmProizvod1;
 
 implementation
 
 {$R *.fmx}
+
 uses Prodaja;
 
 
-procedure TfrmProizvod4.RoundRect12Click(Sender: TObject);
+procedure TfrmProizvod1.RoundRect12Click(Sender: TObject);
 var
 RGBColor1: TAlphaColor;
 var
@@ -80,14 +81,10 @@ end else
 begin
 RoundRect12.Fill.Color := RGBColor2;
 end;
-if RoundRect13.Fill.Color = RGBColor1 then
-begin
-  RoundRect13.Fill.Color:= RGBColor2;
-end;
 end;
 
 
-procedure TfrmProizvod4.RoundRect13Click(Sender: TObject);
+procedure TfrmProizvod1.RoundRect13Click(Sender: TObject);
 var
 RGBColor1: TAlphaColor;
 var
@@ -104,13 +101,9 @@ end else
 begin
 RoundRect13.Fill.Color := RGBColor2;
 end;
-if RoundRect12.Fill.Color = RGBColor1 then
-begin
-  RoundRect12.Fill.Color:= RGBColor2;
-end;
 end;
 
-procedure TfrmProizvod4.RoundRect1Click(Sender: TObject);
+procedure TfrmProizvod1.RoundRect1Click(Sender: TObject);
 begin
 frmProdaja.show;
 self.hide;

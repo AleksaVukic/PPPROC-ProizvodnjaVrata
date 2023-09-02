@@ -1,7 +1,7 @@
-object frmProizvod3: TfrmProizvod3
+object frmProizvod4: TfrmProizvod4
   Left = 0
   Top = 0
-  Caption = 'Staklo iz delova'
+  Caption = 'Klizna vrata'
   ClientHeight = 480
   ClientWidth = 640
   Fill.Color = xFF80A19E
@@ -564,7 +564,7 @@ object frmProizvod3: TfrmProizvod3
       Size.PlatformDefault = False
       TextSettings.Font.Size = 16.000000000000000000
       TextSettings.Font.StyleExt = {00070000000000000004000000}
-      Text = 'Staklo iz delova'
+      Text = 'Klizna vrata'
       TabOrder = 0
     end
     object Label4: TLabel
@@ -573,7 +573,7 @@ object frmProizvod3: TfrmProizvod3
       Size.Width = 41.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
-      Text = '(P - 3)'
+      Text = '(P - 4)'
       TabOrder = 1
     end
   end
@@ -591,7 +591,6 @@ object frmProizvod3: TfrmProizvod3
     Size.Width = 48.000000000000000000
     Size.Height = 33.000000000000000000
     Size.PlatformDefault = False
-    OnClick = RoundRect12Click
     object Label11: TLabel
       Align = Center
       StyledSettings = [Family, FontColor]
@@ -610,7 +609,6 @@ object frmProizvod3: TfrmProizvod3
     Size.Width = 48.000000000000000000
     Size.Height = 33.000000000000000000
     Size.PlatformDefault = False
-    OnClick = RoundRect13Click
     object Label12: TLabel
       Align = Center
       StyledSettings = [Family, FontColor]
@@ -681,12 +679,12 @@ object frmProizvod3: TfrmProizvod3
     object Label1: TLabel
       Align = Center
       StyledSettings = [Family, FontColor]
-      Size.Width = 169.000000000000000000
+      Size.Width = 127.000000000000000000
       Size.Height = 16.000000000000000000
       Size.PlatformDefault = False
       TextSettings.Font.Size = 18.000000000000000000
       TextSettings.Font.StyleExt = {00070000000000000004000000}
-      Text = 'STAKLO IZ DELOVA'
+      Text = 'KLIZNA VRATA'
       TabOrder = 0
     end
     object logo1: TImage
@@ -1104,7 +1102,6 @@ object frmProizvod3: TfrmProizvod3
     Size.Width = 161.000000000000000000
     Size.Height = 50.000000000000000000
     Size.PlatformDefault = False
-    OnClick = RoundRect1Click
   end
   object BACK: TLabel
     StyledSettings = [Family, FontColor]

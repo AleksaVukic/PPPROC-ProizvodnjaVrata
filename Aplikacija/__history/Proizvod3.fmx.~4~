@@ -1,7 +1,7 @@
-object frmProizvod1: TfrmProizvod1
+object frmProizvod3: TfrmProizvod3
   Left = 0
   Top = 0
-  Caption = 'Panelna vrata'
+  Caption = 'Staklo iz delova'
   ClientHeight = 480
   ClientWidth = 640
   FormFactor.Width = 320
