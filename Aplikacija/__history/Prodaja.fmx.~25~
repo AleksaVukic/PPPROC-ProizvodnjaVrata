@@ -6144,42 +6144,4 @@ object frmProdaja: TfrmProdaja
       OnClick = BackClick
     end
   end
-  object ListBox1: TListBox
-    Position.X = 56.000000000000000000
-    Position.Y = 112.000000000000000000
-    Size.Width = 545.000000000000000000
-    Size.Height = 200.000000000000000000
-    Size.PlatformDefault = False
-    TabOrder = 2
-    DisableFocusEffect = True
-    DefaultItemStyles.ItemStyle = ''
-    DefaultItemStyles.GroupHeaderStyle = ''
-    DefaultItemStyles.GroupFooterStyle = ''
-    Viewport.Width = 541.000000000000000000
-    Viewport.Height = 196.000000000000000000
-    object ListBoxItem1: TListBoxItem
-      TabOrder = 0
-      Text = 'ListBoxItem1'
-    end
-    object ListBoxItem2: TListBoxItem
-      Position.Y = 19.000000000000000000
-      TabOrder = 1
-      Text = 'ListBoxItem2'
-    end
-    object ListBoxItem3: TListBoxItem
-      Position.Y = 38.000000000000000000
-      TabOrder = 2
-      Text = 'ListBoxItem3'
-    end
-    object ListBoxItem4: TListBoxItem
-      Position.Y = 57.000000000000000000
-      TabOrder = 3
-      Text = 'ListBoxItem4'
-    end
-    object ListBoxItem5: TListBoxItem
-      Position.Y = 76.000000000000000000
-      TabOrder = 4
-      Text = 'ListBoxItem5'
-    end
-  end
 end

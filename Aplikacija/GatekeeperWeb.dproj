@@ -187,22 +187,6 @@
         <DCCReference Include="Pravna.pas">
             <Form>frmPravna</Form>
         </DCCReference>
-        <DCCReference Include="Proizvod1.pas">
-            <Form>frmProizvod1</Form>
-            <FormType>fmx</FormType>
-        </DCCReference>
-        <DCCReference Include="Proizvod2.pas">
-            <Form>frmProizvod2</Form>
-            <FormType>fmx</FormType>
-        </DCCReference>
-        <DCCReference Include="Proizvod3.pas">
-            <Form>frmProizvod3</Form>
-            <FormType>fmx</FormType>
-        </DCCReference>
-        <DCCReference Include="Proizvod4.pas">
-            <Form>frmProizvod4</Form>
-            <FormType>fmx</FormType>
-        </DCCReference>
         <DCCReference Include="SobnaVrata.pas">
             <Form>frmSobnaVrata</Form>
             <FormType>fmx</FormType>
@@ -224,6 +208,14 @@
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="BackgroundThread.pas"/>
+        <DCCReference Include="Proizovd.pas">
+            <Form>Form1</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="Porudzbenica.pas">
+            <Form>Form2</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -262,6 +254,12 @@
                     </Platform>
                 </DeployFile>
                 <DeployFile LocalName="Win32\Debug\GatekeeperWeb.exe" Configuration="Debug" Class="ProjectOutput"/>
+                <DeployFile LocalName="Win32\Debug\GatekeeperWeb.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>GatekeeperWeb.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployClass Name="AdditionalDebugSymbols">
                     <Platform Name="iOSSimulator">
                         <Operation>1</Operation>

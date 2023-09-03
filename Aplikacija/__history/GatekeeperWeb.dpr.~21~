@@ -18,14 +18,16 @@ uses
   Korpa in 'Korpa.pas' {frmKorpa},
   Magacin in 'Magacin.pas' {frmMagacin},
   Pravna in 'Pravna.pas' {frmPravna},
+  Proizvod1 in 'Proizvod1.pas' {frmProizvod1},
+  Proizvod2 in 'Proizvod2.pas' {frmProizvod2},
+  Proizvod3 in 'Proizvod3.pas' {frmProizvod3},
+  Proizvod4 in 'Proizvod4.pas' {frmProizvod4},
   SobnaVrata in 'SobnaVrata.pas' {frmSobnaVrata},
   DvokrilnaVrata in 'DvokrilnaVrata.pas' {frmDvokrilnaVrata},
   VrataSigurnosna in 'VrataSigurnosna.pas' {frmSigurnosnaVrata},
   VrataKlizna in 'VrataKlizna.pas' {frmKliznaVrata},
   HarmonikaVrata in 'HarmonikaVrata.pas' {frmHarmonikaVrata},
-  BackgroundThread in 'BackgroundThread.pas',
-  Proizovd in 'Proizovd.pas' {Form1},
-  Porudzbenica in 'Porudzbenica.pas' {Form2};
+  BackgroundThread in 'BackgroundThread.pas';
 
 {$R *.res}
 
@@ -46,12 +48,14 @@ begin
   Application.CreateForm(TfrmKorpa, frmKorpa);
   Application.CreateForm(TfrmMagacin, frmMagacin);
   Application.CreateForm(TfrmPravna, frmPravna);
+  Application.CreateForm(TfrmProizvod1, frmProizvod1);
+  Application.CreateForm(TfrmProizvod2, frmProizvod2);
+  Application.CreateForm(TfrmProizvod3, frmProizvod3);
+  Application.CreateForm(TfrmProizvod4, frmProizvod4);
   Application.CreateForm(TfrmSobnaVrata, frmSobnaVrata);
   Application.CreateForm(TfrmDvokrilnaVrata, frmDvokrilnaVrata);
   Application.CreateForm(TfrmSigurnosnaVrata, frmSigurnosnaVrata);
   Application.CreateForm(TfrmKliznaVrata, frmKliznaVrata);
   Application.CreateForm(TfrmHarmonikaVrata, frmHarmonikaVrata);
-  Application.CreateForm(TForm1, Form1);
-  Application.CreateForm(TForm2, Form2);
   Application.Run;
 end.
