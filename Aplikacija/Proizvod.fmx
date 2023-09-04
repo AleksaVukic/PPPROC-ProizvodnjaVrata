@@ -178,4 +178,11 @@ object frmProizvod: TfrmProizvod
     Text = 'Boja:'
     TabOrder = 4
   end
+  object Button1: TButton
+    Position.X = 369.000000000000000000
+    Position.Y = 376.000000000000000000
+    TabOrder = 16
+    Text = 'Kupi'
+    OnClick = Button1Click
+  end
 end

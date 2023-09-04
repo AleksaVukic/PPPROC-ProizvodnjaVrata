@@ -1,17 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899.12.30 00:00:00.000.329,3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Proizovd.pas=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Proizvod.pas=D:\</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.727,=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.603,C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Proizovd.pas=C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.329,3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Proizovd.fmx=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Proizvod.fmx=D:\</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.251,C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Porudzbenica.fmx=C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Unit2.fmx</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.603,C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Proizovd.fmx=C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.fmx</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.067,=C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.251,C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Porudzbenica.pas=C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Unit2.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.990,3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\BackgroundThread2.pas=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas=D:\</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.190,=C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Unit2.pas</Transaction>
-  </Transactions>  <ProjectSortOrder AutoSort="0" SortType="0">
+    <Transaction>1899/12/30 00:00:00.000.727,=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.603,C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.fmx=C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Proizovd.fmx</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.990,D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\BackgroundThread2.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.603,C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas=C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Proizovd.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.067,=C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.329,D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Proizvod.fmx=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Proizovd.fmx</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.251,C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Unit2.fmx=C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Porudzbenica.fmx</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.329,D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Proizvod.pas=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Proizovd.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.251,C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Unit2.pas=C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Porudzbenica.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.190,=C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Unit2.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
     <File Path="BackgroundThread.pas"/>
     <File Path="BackgroundThread2.pas"/>
     <File Path="Cenovnik.pas"/>

@@ -29,9 +29,11 @@ type
     Label10: TLabel;
     Label12: TLabel;
     Label11: TLabel;
+    Button1: TButton;
     procedure BACKClick(Sender: TObject);
     procedure RoundRect1Click(Sender: TObject);
     procedure RoundRect2Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -45,7 +47,7 @@ implementation
 
 {$R *.fmx}
 
-uses Prodaja,Main;
+uses Prodaja,Main,Porudzbenica;
 
 procedure TfrmProizvod.BACKClick(Sender: TObject);
 begin
@@ -54,6 +56,12 @@ self.hide;
 end;
 
 
+
+procedure TfrmProizvod.Button1Click(Sender: TObject);
+begin
+frmPorudzbenica.show ;
+self.hide;
+end;
 
 procedure TfrmProizvod.RoundRect1Click(Sender: TObject);
 begin
