@@ -19,7 +19,7 @@ object frmProizvod: TfrmProizvod
     Size.PlatformDefault = False
     TextSettings.Font.Size = 22.000000000000000000
     Text = 'Proizvod'
-    TabOrder = 11
+    TabOrder = 10
   end
   object Label2: TLabel
     StyledSettings = [Family, Style, FontColor]
@@ -30,11 +30,11 @@ object frmProizvod: TfrmProizvod
     Size.PlatformDefault = False
     TextSettings.Font.Size = 16.000000000000000000
     Text = 'Kolicina:'
-    TabOrder = 10
+    TabOrder = 9
   end
   object Edit1: TEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
-    TabOrder = 12
+    TabOrder = 11
     Text = '1'
     Position.X = 120.000000000000000000
     Position.Y = 108.000000000000000000
@@ -51,7 +51,7 @@ object frmProizvod: TfrmProizvod
     Size.PlatformDefault = False
     TextSettings.Font.Size = 16.000000000000000000
     Text = 'Dimenzije:'
-    TabOrder = 9
+    TabOrder = 8
   end
   object Label5: TLabel
     StyledSettings = [Family, Style]
@@ -64,18 +64,18 @@ object frmProizvod: TfrmProizvod
     TextSettings.FontColor = claAzure
     TextSettings.HorzAlign = Trailing
     Text = 'Cena:'
-    TabOrder = 8
+    TabOrder = 7
   end
   object Label4: TLabel
     StyledSettings = [Family, Style, FontColor]
     Position.X = 48.000000000000000000
     Position.Y = 211.000000000000000000
-    Size.Width = 41.000000000000000000
+    Size.Width = 113.000000000000000000
     Size.Height = 33.000000000000000000
     Size.PlatformDefault = False
     TextSettings.Font.Size = 16.000000000000000000
     Text = 'Boja:'
-    TabOrder = 5
+    TabOrder = 4
   end
   object Label6: TLabel
     StyledSettings = [Family, Style, FontColor]
@@ -98,12 +98,12 @@ object frmProizvod: TfrmProizvod
     TextSettings.Font.Size = 22.000000000000000000
     TextSettings.FontColor = claAzure
     Text = '1'
-    TabOrder = 7
+    TabOrder = 6
   end
   object BACK: TButton
     Position.X = 16.000000000000000000
     Position.Y = 448.000000000000000000
-    TabOrder = 13
+    TabOrder = 12
     Text = 'Back'
     OnClick = BACKClick
   end
@@ -116,7 +116,7 @@ object frmProizvod: TfrmProizvod
     Size.PlatformDefault = False
     TextSettings.Font.Size = 16.000000000000000000
     Text = '1'
-    TabOrder = 6
+    TabOrder = 5
   end
   object RoundRect1: TRoundRect
     Position.X = 104.000000000000000000
@@ -129,7 +129,7 @@ object frmProizvod: TfrmProizvod
   object RoundRect2: TRoundRect
     Position.X = 144.000000000000000000
     Position.Y = 272.000000000000000000
-    Size.Width = 33.000000000000000000
+    Size.Width = 193.000000000000000000
     Size.Height = 26.000000000000000000
     Size.PlatformDefault = False
     OnClick = RoundRect2Click
@@ -166,16 +166,5 @@ object frmProizvod: TfrmProizvod
     TextSettings.Font.Size = 16.000000000000000000
     Text = '('
     TabOrder = 2
-  end
-  object Label11: TLabel
-    StyledSettings = [Family, Style, FontColor]
-    Position.X = 88.000000000000000000
-    Position.Y = 211.000000000000000000
-    Size.Width = 89.000000000000000000
-    Size.Height = 33.000000000000000000
-    Size.PlatformDefault = False
-    TextSettings.Font.Size = 16.000000000000000000
-    Text = 'Boja:'
-    TabOrder = 4
   end
 end

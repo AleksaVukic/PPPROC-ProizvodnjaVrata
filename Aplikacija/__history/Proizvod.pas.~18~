@@ -8,7 +8,8 @@ uses
   FMX.Controls.Presentation, FMX.Edit, FMX.StdCtrls, FireDAC.Stan.Intf,
   FireDAC.Stan.Option, FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf,
   FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys,
-  FireDAC.FMXUI.Wait, Data.DB, FireDAC.Comp.Client,FireDAC.Stan.Param;
+  FireDAC.FMXUI.Wait, Data.DB, FireDAC.Comp.Client,FireDAC.Stan.Param,
+  FMX.Objects;
 
 type
   TfrmProizvod = class(TForm)
@@ -20,7 +21,14 @@ type
     Label5: TLabel;
     Label6: TLabel;
     Label7: TLabel;
-    procedure FormCreate(Sender: TObject);
+    BACK: TButton;
+    Label8: TLabel;
+    RoundRect1: TRoundRect;
+    RoundRect2: TRoundRect;
+    Label9: TLabel;
+    Label10: TLabel;
+    Label12: TLabel;
+    procedure BACKClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -36,34 +44,12 @@ implementation
 
 uses Prodaja,Main;
 
-procedure TfrmProizvod.FormCreate(Sender: TObject);
+procedure TfrmProizvod.BACKClick(Sender: TObject);
 begin
-var
-Index:string;
-Index := frmProdaja.Label1.Text;
-
-var
-MyQuery: TFDQuery;
-
-begin
-    MyQuery := TFDQuery.Create(nil);
-    try
-      MyQuery.Connection := GlobalConnection;
-      MyQuery.SQL.Text := 'SELECT * FROM SifarnikProizvoda WHERE IDProizvoda = :ID';
-      MyQuery.Params.ParamByName('ID').AsString := Index;
-      MyQuery.Open;
-
-      if not MyQuery.IsEmpty then
-      begin
-        Label1.Text := MyQuery.FieldByName('Naziv').AsString;
-
-      end;
-
-    finally
-      MyQuery.Free;
-
-    end;
-  end;
+frmProdaja.show;
+self.hide;
 end;
+
+
 
 end.

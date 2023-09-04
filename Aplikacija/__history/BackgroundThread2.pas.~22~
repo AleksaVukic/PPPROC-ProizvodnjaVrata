@@ -51,18 +51,9 @@ BCena:integer;
       begin
         frmProizvod.Label1.Text := MyQuery.FieldByName('Naziv').AsString;
         frmProizvod.Label8.Text := MyQuery.FieldByName('Dimenzija').AsString;
-        frmProizvod.Label11.Text := MyQuery.FieldByName('Boja krila').AsString;
-        Bcena := MyQuery.FieldByName('Cena brave').AsInteger;
-        frmProizvod.Label12.Text := '(' + Bcena.ToString + ')';
         Cena := MyQuery.FieldByName('Cena').AsString;
         Kolicina := frmProizvod.Edit1.Text;
-        if frmProizvod.RoundRect1.Fill.Color = $FF538681 then
-        begin
-          Ucena := Cena.ToInteger * Kolicina.ToInteger + BCena;
-        end else
-        begin
-          Ucena := Cena.ToInteger * Kolicina.ToInteger;
-        end;
+        Ucena := Cena.ToInteger * Kolicina.ToInteger;
         frmProizvod.Label7.Text := Ucena.ToString;
       end;
 

@@ -7,18 +7,17 @@ object frmProizvod: TfrmProizvod
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
-  OnCreate = FormCreate
   DesignerMasterStyle = 0
   object Label1: TLabel
     StyledSettings = [Family, Style, FontColor]
     Position.X = 48.000000000000000000
     Position.Y = 48.000000000000000000
-    Size.Width = 153.000000000000000000
+    Size.Width = 369.000000000000000000
     Size.Height = 41.000000000000000000
     Size.PlatformDefault = False
     TextSettings.Font.Size = 22.000000000000000000
     Text = 'Proizvod'
-    TabOrder = 5
+    TabOrder = 6
   end
   object Label2: TLabel
     StyledSettings = [Family, Style, FontColor]
@@ -29,11 +28,12 @@ object frmProizvod: TfrmProizvod
     Size.PlatformDefault = False
     TextSettings.Font.Size = 16.000000000000000000
     Text = 'Kolicina:'
-    TabOrder = 4
+    TabOrder = 5
   end
   object Edit1: TEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
-    TabOrder = 6
+    TabOrder = 7
+    Text = '1'
     Position.X = 120.000000000000000000
     Position.Y = 108.000000000000000000
     Size.Width = 57.000000000000000000
@@ -49,18 +49,19 @@ object frmProizvod: TfrmProizvod
     Size.PlatformDefault = False
     TextSettings.Font.Size = 16.000000000000000000
     Text = 'Dimenzije:'
-    TabOrder = 3
+    TabOrder = 4
   end
   object Label5: TLabel
     StyledSettings = [Family, Style, FontColor]
-    Position.X = 336.000000000000000000
-    Position.Y = 385.000000000000000000
+    Position.X = 376.000000000000000000
+    Position.Y = 393.000000000000000000
     Size.Width = 113.000000000000000000
     Size.Height = 33.000000000000000000
     Size.PlatformDefault = False
     TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.HorzAlign = Trailing
     Text = 'Cena:'
-    TabOrder = 2
+    TabOrder = 3
   end
   object Label4: TLabel
     StyledSettings = [Family, Style, FontColor]
@@ -83,5 +84,23 @@ object frmProizvod: TfrmProizvod
     TextSettings.Font.Size = 16.000000000000000000
     Text = 'Brava'
     TabOrder = 0
+  end
+  object Label7: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 496.000000000000000000
+    Position.Y = 393.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    Text = 'Cena:'
+    TabOrder = 2
+  end
+  object BACK: TButton
+    Position.X = 16.000000000000000000
+    Position.Y = 448.000000000000000000
+    TabOrder = 8
+    Text = 'Back'
+    OnClick = BACKClick
   end
 end

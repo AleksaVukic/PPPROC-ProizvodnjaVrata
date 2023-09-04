@@ -20,7 +20,8 @@ type
     Label5: TLabel;
     Label6: TLabel;
     Label7: TLabel;
-    procedure FormCreate(Sender: TObject);
+    BACK: TButton;
+    procedure BACKClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -36,33 +37,12 @@ implementation
 
 uses Prodaja,Main;
 
-procedure TfrmProizvod.FormCreate(Sender: TObject);
+procedure TfrmProizvod.BACKClick(Sender: TObject);
 begin
-var
-Index:integer;
-Index := frmProdaja.Label1.Text.ToInteger;
-
-var
-MyQuery: TFDQuery;
-
-begin
-    MyQuery := TFDQuery.Create(nil);
-    try
-      MyQuery.Connection := GlobalConnection;
-      MyQuery.SQL.Text := 'SELECT * FROM SifarnikProizvoda WHERE IDProizvoda = :ID';
-      MyQuery.Params.ParamByName('ID').AsInteger := Index;
-      MyQuery.Open;
-
-      if not MyQuery.IsEmpty then
-      begin
-        Label1.Text := MyQuery.FieldByName('Naziv').AsString;
-      end;
-
-    finally
-      MyQuery.Free;
-
-    end;
-  end;
+frmProdaja.show;
+self.hide;
 end;
+
+
 
 end.

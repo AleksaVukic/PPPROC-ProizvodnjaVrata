@@ -7,13 +7,12 @@ object frmProizvod: TfrmProizvod
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
-  OnCreate = FormCreate
   DesignerMasterStyle = 0
   object Label1: TLabel
     StyledSettings = [Family, Style, FontColor]
     Position.X = 48.000000000000000000
     Position.Y = 48.000000000000000000
-    Size.Width = 153.000000000000000000
+    Size.Width = 369.000000000000000000
     Size.Height = 41.000000000000000000
     Size.PlatformDefault = False
     TextSettings.Font.Size = 22.000000000000000000

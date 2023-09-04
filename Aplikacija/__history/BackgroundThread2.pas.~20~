@@ -31,12 +31,11 @@ var
 Index:integer;
 Index:=frmProdaja.Label1.Text.ToInteger + 1;
 var
-Cena:integer;
+Kolicina:string;
 var
-Kolicina:integer;
+Cena:string;
 var
-TotalnaCena:integer;
-
+UCena:integer;
 
     begin
     MyQuery := TFDQuery.Create(nil);
@@ -49,10 +48,10 @@ TotalnaCena:integer;
       if not MyQuery.IsEmpty then
       begin
         frmProizvod.Label1.Text := MyQuery.FieldByName('Naziv').AsString;
-        Cena := MyQuery.FieldByName('Cena').AsInteger;
-        Kolicina :=frmProizvod.Edit1.Text.ToInteger;
-        TotalnaCena := Cena * Kolicina;
-        frmProizvod.Label7.Text := TotalnaCena.ToString;
+        Cena := MyQuery.FieldByName('Cena').AsString;
+        Kolicina := frmProizvod.Edit1.Text;
+        Ucena := Cena.ToInteger * Kolicina.ToInteger;
+        frmProizvod.Label7.Text := Ucena.ToString;
       end;
 
     finally
@@ -60,7 +59,7 @@ TotalnaCena:integer;
 
     end;
     end;
-    Sleep(1000); // Wait for a second before repeating
+    Sleep(500); // Wait for a second before repeating
   end;
 end;
 

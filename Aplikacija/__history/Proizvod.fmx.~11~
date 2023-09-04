@@ -12,7 +12,7 @@ object frmProizvod: TfrmProizvod
     StyledSettings = [Family, Style, FontColor]
     Position.X = 48.000000000000000000
     Position.Y = 48.000000000000000000
-    Size.Width = 153.000000000000000000
+    Size.Width = 369.000000000000000000
     Size.Height = 41.000000000000000000
     Size.PlatformDefault = False
     TextSettings.Font.Size = 22.000000000000000000
@@ -33,9 +33,10 @@ object frmProizvod: TfrmProizvod
   object Edit1: TEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
     TabOrder = 7
+    Text = '1'
     Position.X = 120.000000000000000000
     Position.Y = 108.000000000000000000
-    Size.Width = 57.000000000000000000
+    Size.Width = 25.000000000000000000
     Size.Height = 22.000000000000000000
     Size.PlatformDefault = False
   end
