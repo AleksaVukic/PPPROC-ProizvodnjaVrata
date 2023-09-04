@@ -24,8 +24,9 @@ uses
   VrataKlizna in 'VrataKlizna.pas' {frmKliznaVrata},
   HarmonikaVrata in 'HarmonikaVrata.pas' {frmHarmonikaVrata},
   BackgroundThread in 'BackgroundThread.pas',
-  Proizovd in 'Proizovd.pas' {Form1},
-  Porudzbenica in 'Porudzbenica.pas' {Form2};
+  Proizvod in 'Proizvod.pas' {frmProizvod},
+  Porudzbenica in 'Porudzbenica.pas' {Form2},
+  BackgroundThread2 in 'BackgroundThread2.pas';
 
 {$R *.res}
 
@@ -51,7 +52,7 @@ begin
   Application.CreateForm(TfrmSigurnosnaVrata, frmSigurnosnaVrata);
   Application.CreateForm(TfrmKliznaVrata, frmKliznaVrata);
   Application.CreateForm(TfrmHarmonikaVrata, frmHarmonikaVrata);
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfrmProizvod, frmProizvod);
   Application.CreateForm(TForm2, Form2);
   Application.Run;
 end.
