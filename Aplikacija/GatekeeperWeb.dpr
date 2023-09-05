@@ -26,7 +26,8 @@ uses
   BackgroundThread in 'BackgroundThread.pas',
   Proizvod in 'Proizvod.pas' {frmProizvod},
   Porudzbenica in 'Porudzbenica.pas' {frmPorudzbenica},
-  BackgroundThread2 in 'BackgroundThread2.pas';
+  BackgroundThread2 in 'BackgroundThread2.pas',
+  Racun in 'Racun.pas' {frmRacun};
 
 {$R *.res}
 
@@ -54,5 +55,6 @@ begin
   Application.CreateForm(TfrmHarmonikaVrata, frmHarmonikaVrata);
   Application.CreateForm(TfrmProizvod, frmProizvod);
   Application.CreateForm(TfrmPorudzbenica, frmPorudzbenica);
+  Application.CreateForm(TfrmRacun, frmRacun);
   Application.Run;
 end.

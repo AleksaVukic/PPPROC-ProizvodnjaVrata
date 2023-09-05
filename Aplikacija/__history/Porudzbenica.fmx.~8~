@@ -1,0 +1,190 @@
+object frmPorudzbenica: TfrmPorudzbenica
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 480
+  ClientWidth = 640
+  Fill.Color = xFF80A19E
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Back: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 436.000000000000000000
+    TabOrder = 0
+    Text = 'Back'
+    OnClick = BackClick
+  end
+  object Rectangle1: TRectangle
+    Fill.Color = xFFCBC7C7
+    Position.X = 24.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 585.000000000000000000
+    Size.Height = 377.000000000000000000
+    Size.PlatformDefault = False
+    object ListBox1: TListBox
+      Position.X = 34.000000000000000000
+      Position.Y = 160.000000000000000000
+      Size.Width = 63.000000000000000000
+      Size.Height = 105.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 59.000000000000000000
+      Viewport.Height = 101.000000000000000000
+      object ListBoxItem1: TListBoxItem
+        TabOrder = 0
+        Text = 'ListBoxItem1'
+      end
+    end
+    object label4: TLabel
+      Position.X = 50.000000000000000000
+      Position.Y = 31.000000000000000000
+      Size.Width = 71.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Narucilac:'
+      TabOrder = 6
+    end
+    object Label1: TLabel
+      Position.X = 50.000000000000000000
+      Position.Y = 58.000000000000000000
+      Size.Width = 71.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Adresa:'
+      TabOrder = 5
+    end
+    object Label2: TLabel
+      Position.X = 50.000000000000000000
+      Position.Y = 83.000000000000000000
+      Size.Width = 71.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Br. telefona:'
+      TabOrder = 4
+    end
+    object ListBox2: TListBox
+      Position.X = 138.000000000000000000
+      Position.Y = 160.000000000000000000
+      Size.Width = 176.000000000000000000
+      Size.Height = 105.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 172.000000000000000000
+      Viewport.Height = 101.000000000000000000
+      object ListBoxItem2: TListBoxItem
+        TabOrder = 0
+        Text = 'ListBoxItem1'
+      end
+    end
+    object ListBox3: TListBox
+      Position.X = 322.000000000000000000
+      Position.Y = 162.000000000000000000
+      Size.Width = 87.000000000000000000
+      Size.Height = 103.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 83.000000000000000000
+      Viewport.Height = 99.000000000000000000
+      object ListBoxItem3: TListBoxItem
+        TabOrder = 0
+        Text = 'ListBoxItem1'
+      end
+    end
+    object ListBox4: TListBox
+      Position.X = 434.000000000000000000
+      Position.Y = 160.000000000000000000
+      Size.Width = 87.000000000000000000
+      Size.Height = 105.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 83.000000000000000000
+      Viewport.Height = 101.000000000000000000
+      object ListBoxItem4: TListBoxItem
+        TabOrder = 0
+        Text = 'ListBoxItem1'
+      end
+    end
+    object Label3: TLabel
+      Position.X = 36.000000000000000000
+      Position.Y = 135.000000000000000000
+      Size.Width = 61.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Redni br'
+      TabOrder = 10
+    end
+    object Label5: TLabel
+      Position.X = 189.000000000000000000
+      Position.Y = 135.000000000000000000
+      Size.Width = 61.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Naziv robe'
+      TabOrder = 9
+    end
+    object Label6: TLabel
+      Position.X = 338.000000000000000000
+      Position.Y = 135.000000000000000000
+      Size.Width = 61.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Kolicina'
+      TabOrder = 8
+    end
+    object Label7: TLabel
+      Position.X = 452.000000000000000000
+      Position.Y = 135.000000000000000000
+      Size.Width = 47.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Iznos'
+      TabOrder = 7
+    end
+  end
+  object Label8: TLabel
+    Position.X = 130.000000000000000000
+    Position.Y = 63.000000000000000000
+    Size.Width = 71.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Narucilac:'
+    TabOrder = 6
+  end
+  object Label9: TLabel
+    Position.X = 122.000000000000000000
+    Position.Y = 90.000000000000000000
+    Size.Width = 71.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Adresa:'
+    TabOrder = 5
+  end
+  object Label10: TLabel
+    Position.X = 146.000000000000000000
+    Position.Y = 115.000000000000000000
+    Size.Width = 71.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Br. telefona'
+    TabOrder = 4
+  end
+end

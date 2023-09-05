@@ -56,6 +56,7 @@ BCena:integer;
         frmProizvod.Label12.Text := '(' + Bcena.ToString + ')';
         Cena := MyQuery.FieldByName('Cena').AsString;
         Kolicina := frmProizvod.Edit1.Text;
+        frmProizvod.Label7.Text := Ucena.ToString;
         if frmProizvod.RoundRect1.Fill.Color = $FF538681 then
         begin
           Ucena := Cena.ToInteger * Kolicina.ToInteger + BCena;
@@ -63,7 +64,7 @@ BCena:integer;
         begin
           Ucena := Cena.ToInteger * Kolicina.ToInteger;
         end;
-        frmProizvod.Label7.Text := Ucena.ToString;
+
       end;
 
     finally

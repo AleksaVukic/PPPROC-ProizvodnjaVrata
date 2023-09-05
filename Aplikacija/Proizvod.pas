@@ -34,6 +34,7 @@ type
     procedure RoundRect1Click(Sender: TObject);
     procedure RoundRect2Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -47,7 +48,7 @@ implementation
 
 {$R *.fmx}
 
-uses Prodaja,Main,Porudzbenica;
+uses Prodaja,Main,Porudzbenica,Nalog;
 
 procedure TfrmProizvod.BACKClick(Sender: TObject);
 begin
@@ -56,11 +57,28 @@ self.hide;
 end;
 
 
-
+var
+br:integer;
 procedure TfrmProizvod.Button1Click(Sender: TObject);
 begin
+frmPorudzbenica.Edit1.Text := frmNalog.Label1.Text + ' ' + frmNalog.Label2.Text;
+frmPorudzbenica.Edit2.Text := frmNalog.adresa.Text;
+frmPorudzbenica.Edit3.Text := frmNalog.brtelefona.Text;
+br := br + 1;
+frmPorudzbenica.ListBox1.Items.Add(br.ToString);
+frmPorudzbenica.ListBox2.Items.Add(Label1.Text);
+frmPorudzbenica.ListBox3.Items.Add(Edit1.Text);
+frmPorudzbenica.ListBox4.Items.Add(Label7.Text);
+
+
 frmPorudzbenica.show ;
 self.hide;
+
+end;
+
+procedure TfrmProizvod.FormCreate(Sender: TObject);
+begin
+br:=0;
 end;
 
 procedure TfrmProizvod.RoundRect1Click(Sender: TObject);

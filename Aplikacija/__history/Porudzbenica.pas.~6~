@@ -1,0 +1,55 @@
+unit Porudzbenica;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.Controls.Presentation, FMX.StdCtrls, FMX.Objects, FMX.ListBox, FMX.Layouts,
+  FMX.Edit;
+
+type
+  TfrmPorudzbenica = class(TForm)
+    Back: TButton;
+    Rectangle1: TRectangle;
+    ListBox1: TListBox;
+    ListBoxItem1: TListBoxItem;
+    narucilac: TEdit;
+    label4: TLabel;
+    Label1: TLabel;
+    Label2: TLabel;
+    Edit1: TEdit;
+    Edit3: TEdit;
+    ListBox2: TListBox;
+    ListBoxItem2: TListBoxItem;
+    ListBox3: TListBox;
+    ListBoxItem3: TListBoxItem;
+    ListBox4: TListBox;
+    ListBoxItem4: TListBoxItem;
+    Label3: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    procedure BackClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPorudzbenica: TfrmPorudzbenica;
+
+implementation
+
+{$R *.fmx}
+
+uses Prodaja,Main,Proizvod;
+
+procedure TfrmPorudzbenica.BackClick(Sender: TObject);
+begin
+frmProizvod.show;
+self.hide
+end;
+
+end.

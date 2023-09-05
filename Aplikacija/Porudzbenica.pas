@@ -13,24 +13,23 @@ type
     Back: TButton;
     Rectangle1: TRectangle;
     ListBox1: TListBox;
-    ListBoxItem1: TListBoxItem;
-    narucilac: TEdit;
     label4: TLabel;
     Label1: TLabel;
     Label2: TLabel;
-    Edit1: TEdit;
-    Edit3: TEdit;
     ListBox2: TListBox;
-    ListBoxItem2: TListBoxItem;
     ListBox3: TListBox;
-    ListBoxItem3: TListBoxItem;
     ListBox4: TListBox;
-    ListBoxItem4: TListBoxItem;
     Label3: TLabel;
     Label5: TLabel;
     Label6: TLabel;
     Label7: TLabel;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
+    Button1: TButton;
+    Button2: TButton;
     procedure BackClick(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -50,6 +49,14 @@ procedure TfrmPorudzbenica.BackClick(Sender: TObject);
 begin
 frmProizvod.show;
 self.hide
+end;
+
+procedure TfrmPorudzbenica.Button2Click(Sender: TObject);
+begin
+ListBox1.Items.Clear;
+ListBox2.Items.Clear;
+ListBox3.Items.Clear;
+ListBox4.Items.Clear;
 end;
 
 end.
