@@ -1,2 +1,72 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <BorlandProject/>
+=======
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899/12/30 00:00:00.000.455,D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.fmx=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Racun.fmx</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.455,D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Racun.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.329,3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Proizovd.pas=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Proizvod.pas=D:\</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.251,C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Porudzbenica.fmx=C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Unit2.fmx</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.329,3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Proizovd.fmx=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Proizvod.fmx=D:\</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.603,C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Proizovd.pas=C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.727,=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.067,=C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.251,C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Porudzbenica.pas=C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Unit2.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.603,C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Proizovd.fmx=C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.fmx</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.671,=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.190,=C:\Users\Win11\OneDrive\Radna površina\Skola\PPPROC-ProizvodnjaVrata\Aplikacija\Unit2.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.990,3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\BackgroundThread2.pas=D:\=3\COOLGAMESTUFFDOTCOM\PPPROC-ProizvodnjaVrata\Aplikacija\Unit1.pas=D:\</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="BackgroundThread.pas"/>
+    <File Path="BackgroundThread2.pas"/>
+    <File Path="Cenovnik.pas"/>
+    <File Path="Cenovnik.fmx"/>
+    <File Path="DvokrilnaVrata.pas"/>
+    <File Path="DvokrilnaVrata.fmx"/>
+    <File Path="GlavnaStrana.pas"/>
+    <File Path="GlavnaStrana.fmx"/>
+    <File Path="GlavnaStranaAdmin.pas"/>
+    <File Path="GlavnaStranaAdmin.fmx"/>
+    <File Path="HarmonikaVrata.pas"/>
+    <File Path="HarmonikaVrata.fmx"/>
+    <File Path="Knjigovodjstvo.pas"/>
+    <File Path="Knjigovodjstvo.fmx"/>
+    <File Path="Korpa.pas"/>
+    <File Path="Korpa.fmx"/>
+    <File Path="LogIn.pas"/>
+    <File Path="LogIn.fmx"/>
+    <File Path="Magacin.pas"/>
+    <File Path="Magacin.fmx"/>
+    <File Path="Main.pas"/>
+    <File Path="Main.fmx"/>
+    <File Path="Nabavka.pas"/>
+    <File Path="Nabavka.fmx"/>
+    <File Path="Nalog.pas"/>
+    <File Path="Nalog.fmx"/>
+    <File Path="Normiranje.pas"/>
+    <File Path="Normiranje.fmx"/>
+    <File Path="Podsetnik.pas"/>
+    <File Path="Podsetnik.fmx"/>
+    <File Path="Porudzbenica.pas"/>
+    <File Path="Porudzbenica.fmx"/>
+    <File Path="Pravna.pas"/>
+    <File Path="Pravna.fmx"/>
+    <File Path="Prodaja.pas"/>
+    <File Path="Prodaja.fmx"/>
+    <File Path="Proizvod.pas"/>
+    <File Path="Proizvod.fmx"/>
+    <File Path="Registracija.pas"/>
+    <File Path="Registracija.fmx"/>
+    <File Path="SobnaVrata.pas"/>
+    <File Path="SobnaVrata.fmx"/>
+    <File Path="VrataKlizna.pas"/>
+    <File Path="VrataKlizna.fmx"/>
+    <File Path="VrataSigurnosna.pas"/>
+    <File Path="VrataSigurnosna.fmx"/>
+    <File Path="Racun.pas"/>
+    <File Path="Racun.fmx"/>
+  </ProjectSortOrder>
+</BorlandProject>
+>>>>>>> 0470a9b6d47bdedecef369725032a09fa363525c

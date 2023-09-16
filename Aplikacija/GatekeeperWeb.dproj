@@ -187,22 +187,6 @@
         <DCCReference Include="Pravna.pas">
             <Form>frmPravna</Form>
         </DCCReference>
-        <DCCReference Include="Proizvod1.pas">
-            <Form>frmProizvod1</Form>
-            <FormType>fmx</FormType>
-        </DCCReference>
-        <DCCReference Include="Proizvod2.pas">
-            <Form>frmProizvod2</Form>
-            <FormType>fmx</FormType>
-        </DCCReference>
-        <DCCReference Include="Proizvod3.pas">
-            <Form>frmProizvod3</Form>
-            <FormType>fmx</FormType>
-        </DCCReference>
-        <DCCReference Include="Proizvod4.pas">
-            <Form>frmProizvod4</Form>
-            <FormType>fmx</FormType>
-        </DCCReference>
         <DCCReference Include="SobnaVrata.pas">
             <Form>frmSobnaVrata</Form>
             <FormType>fmx</FormType>
@@ -224,10 +208,26 @@
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="BackgroundThread.pas"/>
+<<<<<<< HEAD
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
         </BuildConfiguration>
+=======
+        <DCCReference Include="Proizvod.pas">
+            <Form>frmProizvod</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="Porudzbenica.pas">
+            <Form>frmPorudzbenica</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="BackgroundThread2.pas"/>
+        <DCCReference Include="Racun.pas">
+            <Form>frmRacun</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+>>>>>>> 0470a9b6d47bdedecef369725032a09fa363525c
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -262,6 +262,16 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+<<<<<<< HEAD
+=======
+                <DeployFile LocalName="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib" Class="DependencyModule">
+                    <Platform Name="OSX32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Win32\Debug\GatekeeperWeb.exe" Configuration="Debug" Class="ProjectOutput"/>
+                <DeployFile LocalName="Win32\Debug\GatekeeperWeb.exe" Configuration="Debug" Class="ProjectOutput"/>
+>>>>>>> 0470a9b6d47bdedecef369725032a09fa363525c
                 <DeployClass Name="AdditionalDebugSymbols">
                     <Platform Name="iOSSimulator">
                         <Operation>1</Operation>

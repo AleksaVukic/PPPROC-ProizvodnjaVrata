@@ -6144,7 +6144,7 @@ object frmNalog: TfrmNalog
     TextSettings.FontColor = claAzure
     TextSettings.HorzAlign = Center
     Text = 'Label1'
-    TabOrder = 10
+    TabOrder = 11
   end
   object Label2: TLabel
     StyledSettings = [Family, Size, Style]
@@ -6163,7 +6163,7 @@ object frmNalog: TfrmNalog
   object Odjava: TButton
     Position.X = 552.000000000000000000
     Position.Y = 448.000000000000000000
-    TabOrder = 11
+    TabOrder = 12
     Text = 'Odjavite Se'
     OnClick = OdjavaClick
   end
@@ -6236,5 +6236,19 @@ object frmNalog: TfrmNalog
     TextSettings.HorzAlign = Center
     Text = 'ADMIN'
     TabOrder = 8
+  end
+  object adresa: TLabel
+    StyledSettings = [Family, Size, Style]
+    Position.X = 600.000000000000000000
+    Position.Y = 368.000000000000000000
+    Scale.X = 2.000000000000000000
+    Scale.Y = 2.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.FontColor = claAzure
+    TextSettings.HorzAlign = Center
+    Text = 'Label1'
+    TabOrder = 10
   end
 end

@@ -42,6 +42,7 @@ MyQuery2: TFDQuery;
       frmNalog.Label1.Text := MyQuery2.FieldByName('Ime').AsString;
       frmNalog.Label2.Text := MyQuery2.FieldByName('Prezime').AsString;
       frmNalog.email.Text := MyQuery2.FieldByName('Email').AsString;
+      frmNalog.adresa.Text := MyQuery2.FieldByName('Adresa').AsString;
       frmNalog.brtelefona.Text := MyQuery2.FieldByName('BrTelefona').AsString;
         if  MyQuery2.FieldByName('ROLE').AsString = 'ADMIN' then
         begin

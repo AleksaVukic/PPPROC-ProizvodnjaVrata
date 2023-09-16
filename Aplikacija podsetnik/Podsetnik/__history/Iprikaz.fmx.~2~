@@ -1,0 +1,44 @@
+object Form4: TForm4
+  Left = 0
+  Top = 0
+  Caption = 'Form4'
+  ClientHeight = 246
+  ClientWidth = 590
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    Position.X = 192.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 41.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Procesi'
+    TabOrder = 0
+  end
+  object ProcesiComboBox: TComboBox
+    Position.X = 240.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+  end
+  object Label3: TLabel
+    Position.X = 112.000000000000000000
+    Position.Y = 96.000000000000000000
+    Text = 'Poruka'
+    TabOrder = 1
+  end
+  object odgovorEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 7
+    TextSettings.VertAlign = Leading
+    Position.X = 112.000000000000000000
+    Position.Y = 112.000000000000000000
+    Size.Width = 369.000000000000000000
+    Size.Height = 97.000000000000000000
+    Size.PlatformDefault = False
+  end
+end

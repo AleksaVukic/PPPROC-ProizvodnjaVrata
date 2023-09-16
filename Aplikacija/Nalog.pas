@@ -28,6 +28,7 @@ type
     Label4: TLabel;
     brtelefona: TLabel;
     ADMIN: TLabel;
+    adresa: TLabel;
     procedure BackClick(Sender: TObject);
     procedure OdjavaClick(Sender: TObject);
 
