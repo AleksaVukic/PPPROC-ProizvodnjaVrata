@@ -27,7 +27,9 @@ uses
   Proizvod in 'Proizvod.pas' {frmProizvod},
   Porudzbenica in 'Porudzbenica.pas' {frmPorudzbenica},
   BackgroundThread2 in 'BackgroundThread2.pas',
-  Racun in 'Racun.pas' {frmRacun};
+  Racun in 'Racun.pas' {frmRacun},
+  BackgroundThread3 in 'BackgroundThread3.pas',
+  NProizvod in 'NProizvod.pas' {frmNProizvod};
 
 {$R *.res}
 
@@ -56,5 +58,6 @@ begin
   Application.CreateForm(TfrmProizvod, frmProizvod);
   Application.CreateForm(TfrmPorudzbenica, frmPorudzbenica);
   Application.CreateForm(TfrmRacun, frmRacun);
+  Application.CreateForm(TfrmNProizvod, frmNProizvod);
   Application.Run;
 end.
