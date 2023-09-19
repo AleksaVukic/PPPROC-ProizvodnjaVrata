@@ -6223,7 +6223,7 @@ object frmNProizvod: TfrmNProizvod
     Position.X = 184.000000000000000000
     Position.Y = 264.000000000000000000
     Size.Width = 209.000000000000000000
-    Size.Height = 17.000000000000000000
+    Size.Height = 65.000000000000000000
     Size.PlatformDefault = False
     TextSettings.Font.Size = 16.000000000000000000
     TextSettings.Font.StyleExt = {00060000000000000004000000}
@@ -6234,7 +6234,7 @@ object frmNProizvod: TfrmNProizvod
   object Label11: TLabel
     StyledSettings = [Family]
     Position.X = 184.000000000000000000
-    Position.Y = 288.000000000000000000
+    Position.Y = 328.000000000000000000
     Size.Width = 137.000000000000000000
     Size.Height = 17.000000000000000000
     Size.PlatformDefault = False
@@ -6247,7 +6247,7 @@ object frmNProizvod: TfrmNProizvod
   object Label12: TLabel
     StyledSettings = [Family]
     Position.X = 184.000000000000000000
-    Position.Y = 312.000000000000000000
+    Position.Y = 352.000000000000000000
     Size.Width = 209.000000000000000000
     Size.Height = 17.000000000000000000
     Size.PlatformDefault = False

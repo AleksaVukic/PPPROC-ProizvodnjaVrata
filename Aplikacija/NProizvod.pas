@@ -37,6 +37,7 @@ type
     RoundRect1: TRoundRect;
     Label7: TLabel;
     procedure RoundRect1Click(Sender: TObject);
+
   private
     { Private declarations }
   public
@@ -51,6 +52,8 @@ implementation
 {$R *.fmx}
 
 uses Main,Normiranje;
+
+
 
 
 

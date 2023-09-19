@@ -18,6 +18,8 @@ object frmNProizvod: TfrmNProizvod
     Size.Width = 626.000000000000000000
     Size.Height = 100.000000000000000000
     Size.PlatformDefault = False
+    TextSettings.FontColor = claSeagreen
+    StyledSettings = [Family, Size, Style]
     TabOrder = 1
     RowCount = 2
     Viewport.Width = 622.000000000000000000
@@ -6149,20 +6151,7 @@ object frmNProizvod: TfrmNProizvod
     TextSettings.Font.StyleExt = {00060000000000000004000000}
     TextSettings.FontColor = claAzure
     Text = 'Boja Krila:'
-    TabOrder = 10
-  end
-  object Label3: TLabel
-    StyledSettings = [Family]
-    Position.X = 192.000000000000000000
-    Position.Y = 240.000000000000000000
-    Size.Width = 97.000000000000000000
-    Size.Height = 17.000000000000000000
-    Size.PlatformDefault = False
-    TextSettings.Font.Size = 16.000000000000000000
-    TextSettings.Font.StyleExt = {00060000000000000004000000}
-    TextSettings.FontColor = claAzure
-    Text = 'Materijali:'
-    TabOrder = 8
+    TabOrder = 12
   end
   object Label4: TLabel
     StyledSettings = [Family]
@@ -6175,60 +6164,20 @@ object frmNProizvod: TfrmNProizvod
     TextSettings.Font.StyleExt = {00060000000000000004000000}
     TextSettings.FontColor = claAzure
     Text = 'content'
-    TabOrder = 5
-  end
-  object Label5: TLabel
-    StyledSettings = [Family]
-    Position.X = 16.000000000000000000
-    Position.Y = 368.000000000000000000
-    Size.Width = 97.000000000000000000
-    Size.Height = 17.000000000000000000
-    Size.PlatformDefault = False
-    TextSettings.Font.Size = 16.000000000000000000
-    TextSettings.Font.StyleExt = {00060000000000000004000000}
-    TextSettings.FontColor = claAzure
-    Text = 'content'
-    TabOrder = 3
+    TabOrder = 6
   end
   object Label6: TLabel
     StyledSettings = [Family]
-    Position.X = 504.000000000000000000
-    Position.Y = 256.000000000000000000
+    Position.X = 400.000000000000000000
+    Position.Y = 240.000000000000000000
     Size.Width = 97.000000000000000000
     Size.Height = 17.000000000000000000
     Size.PlatformDefault = False
     TextSettings.Font.Size = 16.000000000000000000
     TextSettings.Font.StyleExt = {00060000000000000004000000}
     TextSettings.FontColor = claAzure
-    Text = 'Boja:'
-    TabOrder = 7
-  end
-  object Label7: TLabel
-    StyledSettings = [Family]
-    Position.X = 504.000000000000000000
-    Position.Y = 280.000000000000000000
-    Size.Width = 97.000000000000000000
-    Size.Height = 17.000000000000000000
-    Size.PlatformDefault = False
-    TextSettings.Font.Size = 16.000000000000000000
-    TextSettings.Font.StyleExt = {00060000000000000004000000}
-    TextSettings.FontColor = claAzure
-    Text = 'Boja:'
-    TabOrder = 6
-  end
-  object ListBox1: TListBox
-    Position.X = 192.000000000000000000
-    Position.Y = 264.000000000000000000
-    Size.Width = 161.000000000000000000
-    Size.Height = 113.000000000000000000
-    Size.PlatformDefault = False
-    TabOrder = 11
-    DisableFocusEffect = True
-    DefaultItemStyles.ItemStyle = ''
-    DefaultItemStyles.GroupHeaderStyle = ''
-    DefaultItemStyles.GroupFooterStyle = ''
-    Viewport.Width = 157.000000000000000000
-    Viewport.Height = 109.000000000000000000
+    Text = 'Operacije:'
+    TabOrder = 9
   end
   object Label8: TLabel
     StyledSettings = [Family]
@@ -6241,7 +6190,7 @@ object frmNProizvod: TfrmNProizvod
     TextSettings.Font.StyleExt = {00060000000000000004000000}
     TextSettings.FontColor = claAzure
     Text = 'Boja Stoka:'
-    TabOrder = 9
+    TabOrder = 10
   end
   object Label9: TLabel
     StyledSettings = [Family]
@@ -6255,5 +6204,90 @@ object frmNProizvod: TfrmNProizvod
     TextSettings.FontColor = claAzure
     Text = 'content'
     TabOrder = 4
+  end
+  object Label3: TLabel
+    StyledSettings = [Family]
+    Position.X = 184.000000000000000000
+    Position.Y = 240.000000000000000000
+    Size.Width = 137.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.FontColor = claAzure
+    Text = 'Materijal Krila:'
+    TabOrder = 11
+  end
+  object Label10: TLabel
+    StyledSettings = [Family]
+    Position.X = 184.000000000000000000
+    Position.Y = 264.000000000000000000
+    Size.Width = 209.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.FontColor = claAzure
+    Text = 'content'
+    TabOrder = 5
+  end
+  object Label11: TLabel
+    StyledSettings = [Family]
+    Position.X = 184.000000000000000000
+    Position.Y = 288.000000000000000000
+    Size.Width = 137.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.FontColor = claAzure
+    Text = 'Materijal Stoka'
+    TabOrder = 7
+  end
+  object Label12: TLabel
+    StyledSettings = [Family]
+    Position.X = 184.000000000000000000
+    Position.Y = 312.000000000000000000
+    Size.Width = 209.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.FontColor = claAzure
+    Text = 'content'
+    TabOrder = 3
+  end
+  object ListBox1: TListBox
+    Position.X = 400.000000000000000000
+    Position.Y = 272.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 200.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 13
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 197.000000000000000000
+    Viewport.Height = 196.000000000000000000
+  end
+  object RoundRect1: TRoundRect
+    Position.X = 320.000000000000000000
+    Position.Y = 440.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 26.000000000000000000
+    Size.PlatformDefault = False
+    OnClick = RoundRect1Click
+  end
+  object Label7: TLabel
+    StyledSettings = [Family]
+    Position.X = 332.000000000000000000
+    Position.Y = 445.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'Refresh'
+    TabOrder = 8
   end
 end
