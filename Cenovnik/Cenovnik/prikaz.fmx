@@ -1,0 +1,51 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 425
+  ClientWidth = 473
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object ComboBox1: TComboBox
+    Position.X = 184.000000000000000000
+    Position.Y = 32.000000000000000000
+    TabOrder = 0
+    OnChange = ComboBox1Change
+  end
+  object StringGrid1: TStringGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 8.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 457.000000000000000000
+    Size.Height = 337.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    RowCount = 0
+    Viewport.Width = 453.000000000000000000
+    Viewport.Height = 312.000000000000000000
+    object StringColumn3: TStringColumn
+      Header = 'CEna'
+    end
+    object StringColumn1: TStringColumn
+      Header = 'Troskovi materijala'
+      Size.Width = 169.000000000000000000
+    end
+    object StringColumn2: TStringColumn
+      Header = 'Troskovi rada'
+      Size.Width = 175.000000000000000000
+    end
+  end
+  object Label1: TLabel
+    Position.X = 184.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Prozvodi'
+    TabOrder = 2
+  end
+end

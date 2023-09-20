@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/09/14 12:06:59.000.300,=C:\Users\risto\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/09/14 12:11:30.000.540,C:\Users\risto\Documents\Embarcadero\Studio\Projects\Podsetnik.dproj=C:\Users\risto\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+    <Transaction>2023/09/14 12:11:48.000.827,C:\Users\risto\Documents\Embarcadero\Studio\Projects\pocetna.pas=C:\Users\risto\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/09/14 12:11:48.000.827,C:\Users\risto\Documents\Embarcadero\Studio\Projects\pocetna.fmx=C:\Users\risto\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2023/09/14 12:12:17.000.556,C:\FAKS\Cenovnik\pocetna.pas=C:\Users\risto\Documents\Embarcadero\Studio\Projects\pocetna.pas</Transaction>
+    <Transaction>2023/09/14 12:12:17.000.556,C:\FAKS\Cenovnik\pocetna.fmx=C:\Users\risto\Documents\Embarcadero\Studio\Projects\pocetna.fmx</Transaction>
+    <Transaction>2023/09/14 12:12:19.000.298,C:\FAKS\Cenovnik\Podsetnik.dproj=C:\Users\risto\Documents\Embarcadero\Studio\Projects\Podsetnik.dproj</Transaction>
+    <Transaction>2023/09/14 12:12:32.000.582,=C:\FAKS\Cenovnik\Unit2.pas</Transaction>
+    <Transaction>2023/09/14 12:12:50.000.244,C:\FAKS\Cenovnik\cene.fmx=C:\FAKS\Cenovnik\Unit2.fmx</Transaction>
+    <Transaction>2023/09/14 12:12:50.000.244,C:\FAKS\Cenovnik\cene.pas=C:\FAKS\Cenovnik\Unit2.pas</Transaction>
+    <Transaction>2023/09/14 12:20:03.000.520,=C:\FAKS\Cenovnik\Unit3.pas</Transaction>
+    <Transaction>2023/09/14 12:20:13.000.772,C:\FAKS\Cenovnik\prikaz.pas=C:\FAKS\Cenovnik\Unit3.pas</Transaction>
+    <Transaction>2023/09/14 12:20:13.000.772,C:\FAKS\Cenovnik\prikaz.fmx=C:\FAKS\Cenovnik\Unit3.fmx</Transaction>
+    <Transaction>2023/09/14 12:25:46.000.664,=C:\FAKS\Cenovnik\Unit4.pas</Transaction>
+    <Transaction>2023/09/14 12:25:56.000.862,C:\FAKS\Cenovnik\db.pas=C:\FAKS\Cenovnik\Unit4.pas</Transaction>
+    <Transaction>2023/09/14 12:25:56.000.862,C:\FAKS\Cenovnik\db.fmx=C:\FAKS\Cenovnik\Unit4.fmx</Transaction>
+    <Transaction>2023/09/14 12:35:21.000.016,C:\FAKS\Cenovnik\Podsetnik.dproj=C:\FAKS\Cenovnik\Cenovnik.dproj</Transaction>
+    <Transaction>2023/09/14 12:37:22.596,C:\FAKS\Cenovnik\kon.pas=C:\FAKS\Cenovnik\db.pas</Transaction>
+    <Transaction>2023/09/14 12:37:22.596,C:\FAKS\Cenovnik\kon.fmx=C:\FAKS\Cenovnik\db.fmx</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>  <ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="cene.pas"/>
+    <File Path="cene.fmx"/>
+    <File Path="kon.pas"/>
+    <File Path="kon.fmx"/>
+    <File Path="pocetna.pas"/>
+    <File Path="pocetna.fmx"/>
+    <File Path="prikaz.pas"/>
+    <File Path="prikaz.fmx"/>
+  </ProjectSortOrder>
+</BorlandProject>

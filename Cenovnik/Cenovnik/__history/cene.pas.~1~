@@ -1,0 +1,52 @@
+unit cene;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, System.Rtti,
+  FMX.Grid.Style, FMX.Grid, FMX.StdCtrls, FMX.Edit, FMX.Controls.Presentation,
+  FMX.ScrollBox, FMX.ListBox,db;
+
+type
+  TForm2 = class(TForm)
+    ComboBox1: TComboBox;
+    StringGrid1: TStringGrid;
+    Label1: TLabel;
+    Label2: TLabel;
+    Edit1: TEdit;
+    Button1: TButton;
+    Label3: TLabel;
+    StringColumn1: TStringColumn;
+    StringColumn2: TStringColumn;
+    StringColumn3: TStringColumn;
+    procedure FormShow(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.fmx}
+
+procedure TForm2.FormShow(Sender: TObject);
+begin
+combobox1.clear;
+ dbForm.FDQuery1.sql.Text:='SELECT * FROM izvrsavanje_rada';
+ dbForm.FDQuery1.open;
+
+ for I := 1 to dbform.FDQuery1.RecordCount do
+begin
+combobox1.items.Add(dbform.FDQuery1.FieldByName('id_izvrsavanja').AsString);
+dbform.FDQuery1.next;
+end;
+
+  Form2.FDQuery1.close;
+end;
+
+end.
