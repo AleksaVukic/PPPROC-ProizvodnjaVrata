@@ -20,7 +20,7 @@ object frmNProizvod: TfrmNProizvod
     Size.PlatformDefault = False
     TextSettings.FontColor = claSeagreen
     StyledSettings = [Family, Size, Style]
-    TabOrder = 1
+    TabOrder = 2
     RowCount = 2
     Viewport.Width = 622.000000000000000000
     Viewport.Height = 75.000000000000000000
@@ -6151,7 +6151,7 @@ object frmNProizvod: TfrmNProizvod
     TextSettings.Font.StyleExt = {00060000000000000004000000}
     TextSettings.FontColor = claAzure
     Text = 'Boja Krila:'
-    TabOrder = 12
+    TabOrder = 13
   end
   object Label4: TLabel
     StyledSettings = [Family]
@@ -6164,7 +6164,7 @@ object frmNProizvod: TfrmNProizvod
     TextSettings.Font.StyleExt = {00060000000000000004000000}
     TextSettings.FontColor = claAzure
     Text = 'content'
-    TabOrder = 6
+    TabOrder = 7
   end
   object Label6: TLabel
     StyledSettings = [Family]
@@ -6177,7 +6177,7 @@ object frmNProizvod: TfrmNProizvod
     TextSettings.Font.StyleExt = {00060000000000000004000000}
     TextSettings.FontColor = claAzure
     Text = 'Operacije:'
-    TabOrder = 9
+    TabOrder = 10
   end
   object Label8: TLabel
     StyledSettings = [Family]
@@ -6190,7 +6190,7 @@ object frmNProizvod: TfrmNProizvod
     TextSettings.Font.StyleExt = {00060000000000000004000000}
     TextSettings.FontColor = claAzure
     Text = 'Boja Stoka:'
-    TabOrder = 10
+    TabOrder = 11
   end
   object Label9: TLabel
     StyledSettings = [Family]
@@ -6203,7 +6203,7 @@ object frmNProizvod: TfrmNProizvod
     TextSettings.Font.StyleExt = {00060000000000000004000000}
     TextSettings.FontColor = claAzure
     Text = 'content'
-    TabOrder = 4
+    TabOrder = 5
   end
   object Label3: TLabel
     StyledSettings = [Family]
@@ -6216,46 +6216,46 @@ object frmNProizvod: TfrmNProizvod
     TextSettings.Font.StyleExt = {00060000000000000004000000}
     TextSettings.FontColor = claAzure
     Text = 'Materijal Krila:'
-    TabOrder = 11
+    TabOrder = 12
   end
   object Label10: TLabel
     StyledSettings = [Family]
     Position.X = 184.000000000000000000
     Position.Y = 264.000000000000000000
     Size.Width = 209.000000000000000000
-    Size.Height = 17.000000000000000000
+    Size.Height = 49.000000000000000000
     Size.PlatformDefault = False
     TextSettings.Font.Size = 16.000000000000000000
     TextSettings.Font.StyleExt = {00060000000000000004000000}
     TextSettings.FontColor = claAzure
     Text = 'content'
-    TabOrder = 5
+    TabOrder = 6
   end
   object Label11: TLabel
     StyledSettings = [Family]
     Position.X = 184.000000000000000000
-    Position.Y = 288.000000000000000000
+    Position.Y = 320.000000000000000000
     Size.Width = 137.000000000000000000
     Size.Height = 17.000000000000000000
     Size.PlatformDefault = False
     TextSettings.Font.Size = 16.000000000000000000
     TextSettings.Font.StyleExt = {00060000000000000004000000}
     TextSettings.FontColor = claAzure
-    Text = 'Materijal Stoka'
-    TabOrder = 7
+    Text = 'Materijal Stoka:'
+    TabOrder = 8
   end
   object Label12: TLabel
     StyledSettings = [Family]
     Position.X = 184.000000000000000000
-    Position.Y = 312.000000000000000000
+    Position.Y = 344.000000000000000000
     Size.Width = 209.000000000000000000
-    Size.Height = 17.000000000000000000
+    Size.Height = 49.000000000000000000
     Size.PlatformDefault = False
     TextSettings.Font.Size = 16.000000000000000000
     TextSettings.Font.StyleExt = {00060000000000000004000000}
     TextSettings.FontColor = claAzure
     Text = 'content'
-    TabOrder = 3
+    TabOrder = 4
   end
   object ListBox1: TListBox
     Position.X = 400.000000000000000000
@@ -6263,7 +6263,7 @@ object frmNProizvod: TfrmNProizvod
     Size.Width = 201.000000000000000000
     Size.Height = 200.000000000000000000
     Size.PlatformDefault = False
-    TabOrder = 13
+    TabOrder = 14
     DisableFocusEffect = True
     DefaultItemStyles.ItemStyle = ''
     DefaultItemStyles.GroupHeaderStyle = ''
@@ -6288,6 +6288,13 @@ object frmNProizvod: TfrmNProizvod
     Size.PlatformDefault = False
     TextSettings.Font.StyleExt = {00070000000000000004000000}
     Text = 'Refresh'
-    TabOrder = 8
+    TabOrder = 9
+  end
+  object Back: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 452.000000000000000000
+    TabOrder = 1
+    Text = 'Back'
+    OnClick = BackClick
   end
 end

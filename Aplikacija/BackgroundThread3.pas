@@ -38,9 +38,13 @@ MyQuery8: TFDQuery;
 var
 MyQuery9: TFDQuery;
 var
+MyQuery10: TFDQuery;
+var
 Index:integer;
-Index:=frmNormiranje.Label1.Text.ToInteger + 1;
+var
+tempName:String;
 
+tempName:=frmNormiranje.Label2.Text;
 var
   IDProizvoda: string;
 var
@@ -71,6 +75,8 @@ var
   IDP:integer;
 var
   MaterijalBrave: string;
+var
+  check:string;
 
 
     begin
@@ -80,31 +86,37 @@ var
     MyQuery7 := TFDQuery.Create(nil);
     MyQuery8 := TFDQuery.Create(nil);
     MyQuery9 := TFDQuery.Create(nil);
+    MyQuery10 := TFDQuery.Create(nil);
     try
       MyQuery4.Connection := GlobalConnection;
-      MyQuery4.SQL.Text := 'SELECT * FROM SifarnikProizvoda WHERE IDProizvoda = :ID';
-      MyQuery4.Params.ParamByName('ID').AsInteger := Index;
+      MyQuery4.SQL.Text := 'SELECT * FROM SifarnikProizvoda WHERE Naziv = :Naziv';
+      MyQuery4.Params.ParamByName('Naziv').AsString := tempName;
       MyQuery4.Open;
-
+      Index:=MyQuery4.FieldByName('IDProizvoda').AsInteger;
       MyQuery5.Connection := GlobalConnection;
-      MyQuery5.SQL.Text := 'SELECT * FROM sifarnik_boja WHERE IDProizvoda = :ID';
-      MyQuery5.Params.ParamByName('ID').AsInteger := Index;
+      MyQuery5.SQL.Text := 'SELECT * FROM sifarnik_boja WHERE Pripada LIKE :ID AND sifra = ''krila''';
+      MyQuery5.Params.ParamByName('ID').AsString := '%(' + Index.ToString + ')%';
       MyQuery5.Open;
 
+      MyQuery10.Connection := GlobalConnection;
+      MyQuery10.SQL.Text := 'SELECT * FROM sifarnik_boja WHERE Pripada LIKE :ID AND sifra = ''stok''';
+      MyQuery10.Params.ParamByName('ID').AsString := '%(' + Index.ToString + ')%';
+      MyQuery10.Open;
+
       MyQuery6.Connection := GlobalConnection;
-      MyQuery6.SQL.Text := 'SELECT * FROM Sifarnik_materijala WHERE IDProizvoda = :ID AND sifra = ''krilo''';
-      MyQuery6.Params.ParamByName('ID').AsInteger := Index;
+      MyQuery6.SQL.Text := 'SELECT * FROM Sifarnik_materijala WHERE IDProizvoda LIKE :ID AND sifra = ''krilo''';
+      MyQuery6.Params.ParamByName('ID').AsString := '%(' + Index.ToString + ')%';
       MyQuery6.Open;
 
       MyQuery7.Connection := GlobalConnection;
-      MyQuery7.SQL.Text := 'SELECT * FROM Sifarnik_materijala WHERE IDProizvoda = :ID AND sifra = ''stok''';
-      MyQuery7.Params.ParamByName('ID').AsInteger := Index;
+      MyQuery7.SQL.Text := 'SELECT * FROM Sifarnik_materijala WHERE IDProizvoda LIKE :ID AND sifra = ''stok''';
+      MyQuery7.Params.ParamByName('ID').AsString := '%(' + Index.ToString + ')%';
       MyQuery7.Open;
 
 
 
       MyQuery9.Connection := GlobalConnection;
-      MyQuery9.SQL.Text := 'SELECT COUNT(*) FROM Operacije';
+      MyQuery9.SQL.Text := 'SELECT MAX(IDOperacije) AS MaxID FROM Operacije';
       MyQuery9.Open;
 
       if not MyQuery4.IsEmpty then
@@ -134,7 +146,7 @@ var
       if not MyQuery5.IsEmpty then
       begin
       frmNProizvod.Label4.Text := MyQuery5.FieldByName('naziv').AsString;
-      frmNProizvod.Label9.Text := MyQuery4.FieldByName('Boja Stoka').AsString
+      frmNProizvod.Label9.Text := MyQuery10.FieldByName('naziv').AsString
       end;
 
       if not MyQuery6.IsEmpty then
@@ -152,17 +164,18 @@ var
       if not MyQuery9.IsEmpty then
       begin
         frmNProizvod.ListBox1.Clear;
-        BrRed := MyQuery9.Fields[0].AsInteger;
+        BrRed := MyQuery9.FieldByName('MaxID').AsInteger;
         for I := 1 to BrRed do
         begin
           MyQuery8.Connection := GlobalConnection;
           MyQuery8.SQL.Text := 'SELECT * FROM Operacije WHERE IDOperacije = :I';
           MyQuery8.Params.ParamByName('I').AsInteger := I;
           MyQuery8.Open;
-          IDP := MyQuery8.FieldByName('IDProizvoda').AsInteger;
+          IDP := 0;
           if not MyQuery8.IsEmpty then
           begin
-          if (IDP=0) or (IDP=Index) then
+          check:=MyQuery8.FieldByName('Pripada').AsString;
+          if not (IDP = Pos('('+Index.ToString+')',check)) then
           begin
             frmNProizvod.ListBox1.Items.Add(MyQuery8.FieldByName('Naziv operacije').AsString);
           end;

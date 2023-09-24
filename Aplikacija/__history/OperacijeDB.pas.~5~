@@ -1,0 +1,42 @@
+unit OperacijeDB;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.Controls.Presentation, FMX.Edit, FMX.StdCtrls, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf,
+  FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys,
+  FireDAC.FMXUI.Wait, Data.DB, FireDAC.Comp.Client,FireDAC.Stan.Param,
+  FMX.Objects, FMX.Ani, FMX.ListBox,FMX.Layouts;
+
+type
+  TfrmOperacijeDB = class(TForm)
+    RoundRect3: TRoundRect;
+    RoundRect4: TRoundRect;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Label1: TLabel;
+    Label4: TLabel;
+    Edit5: TEdit;
+    Label5: TLabel;
+    Label6: TLabel;
+    ListBox1: TListBox;
+    Button1: TButton;
+    Label7: TLabel;
+    Button2: TButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmOperacijeDB: TfrmOperacijeDB;
+
+implementation
+
+{$R *.fmx}
+
+end.

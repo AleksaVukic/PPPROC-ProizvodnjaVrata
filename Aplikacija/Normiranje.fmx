@@ -13,8 +13,8 @@ object frmNormiranje: TfrmNormiranje
   OnCreate = FormCreate
   DesignerMasterStyle = 0
   object ListBox1: TListBox
-    Position.X = 208.000000000000000000
-    Position.Y = 144.000000000000000000
+    Position.X = 344.000000000000000000
+    Position.Y = 208.000000000000000000
     TabOrder = 1
     DisableFocusEffect = True
     DefaultItemStyles.ItemStyle = ''
@@ -35,6 +35,7 @@ object frmNormiranje: TfrmNormiranje
       Position.Y = 20.000000000000000000
       TabOrder = 1
       Text = 'Back'
+      OnClick = BackClick
     end
   end
   object toolbar: TToolBar
@@ -6138,8 +6139,8 @@ object frmNormiranje: TfrmNormiranje
     end
   end
   object Button1: TButton
-    Position.X = 416.000000000000000000
-    Position.Y = 312.000000000000000000
+    Position.X = 552.000000000000000000
+    Position.Y = 376.000000000000000000
     Size.Width = 80.000000000000000000
     Size.Height = 30.000000000000000000
     Size.PlatformDefault = False
@@ -6148,8 +6149,8 @@ object frmNormiranje: TfrmNormiranje
     OnClick = Button1Click
   end
   object GO: TButton
-    Position.X = 416.000000000000000000
-    Position.Y = 272.000000000000000000
+    Position.X = 552.000000000000000000
+    Position.Y = 336.000000000000000000
     Size.Width = 81.000000000000000000
     Size.Height = 30.000000000000000000
     Size.PlatformDefault = False
@@ -6159,8 +6160,39 @@ object frmNormiranje: TfrmNormiranje
   end
   object Label1: TLabel
     Position.X = -24.000000000000000000
-    Position.Y = 256.000000000000000000
+    Position.Y = 280.000000000000000000
+    Text = '0'
+    TabOrder = 5
+  end
+  object Button2: TButton
+    Position.X = 32.000000000000000000
+    Position.Y = 352.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 46.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'Dodaj Proizvod'
+    OnClick = Button2Click
+  end
+  object Label2: TLabel
+    Position.X = -344.000000000000000000
+    Position.Y = 320.000000000000000000
+    Size.Width = 385.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
     Text = '0'
     TabOrder = 4
+  end
+  object Button3: TButton
+    StyledSettings = [Family, Size, Style]
+    Position.X = 464.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Text = 'IZBRISI'
+    TextSettings.FontColor = claBrown
+    OnClick = Button3Click
   end
 end

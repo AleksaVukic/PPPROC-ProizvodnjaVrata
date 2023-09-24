@@ -29,7 +29,11 @@ uses
   BackgroundThread2 in 'BackgroundThread2.pas',
   Racun in 'Racun.pas' {frmRacun},
   BackgroundThread3 in 'BackgroundThread3.pas',
-  NProizvod in 'NProizvod.pas' {frmNProizvod};
+  NProizvod in 'NProizvod.pas' {frmNProizvod},
+  NewProizvod in 'NewProizvod.pas' {frmNewProizvod},
+  BojaDB in 'BojaDB.pas' {frmBojaDB},
+  MaterijalDB in 'MaterijalDB.pas' {frmMaterijalDB},
+  OperacijeDB in 'OperacijeDB.pas' {frmOperacijeDB};
 
 {$R *.res}
 
@@ -59,5 +63,9 @@ begin
   Application.CreateForm(TfrmPorudzbenica, frmPorudzbenica);
   Application.CreateForm(TfrmRacun, frmRacun);
   Application.CreateForm(TfrmNProizvod, frmNProizvod);
+  Application.CreateForm(TfrmNewProizvod, frmNewProizvod);
+  Application.CreateForm(TfrmBojaDB, frmBojaDB);
+  Application.CreateForm(TfrmMaterijalDB, frmMaterijalDB);
+  Application.CreateForm(TfrmOperacijeDB, frmOperacijeDB);
   Application.Run;
 end.

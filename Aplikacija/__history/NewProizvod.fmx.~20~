@@ -1,0 +1,323 @@
+object frmNewProizvod: TfrmNewProizvod
+  Left = 0
+  Top = 0
+  Caption = 'Dodavanje Proizvoda'
+  ClientHeight = 480
+  ClientWidth = 639
+  Fill.Color = xFF80A19E
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Position.X = 112.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 177.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Position.X = 112.000000000000000000
+    Position.Y = 112.000000000000000000
+    Size.Width = 177.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label1: TLabel
+    StyledSettings = [Family]
+    Position.X = 8.000000000000000000
+    Position.Y = 112.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.FontColor = claAzure
+    TextSettings.HorzAlign = Trailing
+    Text = 'Dimenzije:'
+    TabOrder = 13
+  end
+  object Label4: TLabel
+    StyledSettings = [Family]
+    Position.X = 8.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.FontColor = claAzure
+    TextSettings.HorzAlign = Trailing
+    Text = 'Naziv:'
+    TabOrder = 5
+  end
+  object Edit5: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    Text = 'cm'
+    Position.X = 296.000000000000000000
+    Position.Y = 112.000000000000000000
+    Size.Width = 41.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object ListBox1: TListBox
+    Position.X = 8.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 201.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 18
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 85.000000000000000000
+    Viewport.Height = 197.000000000000000000
+  end
+  object ListBox2: TListBox
+    Position.X = 100.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 93.000000000000000000
+    Size.Height = 201.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 17
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 89.000000000000000000
+    Viewport.Height = 197.000000000000000000
+  end
+  object ListBox3: TListBox
+    Position.X = 196.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 141.000000000000000000
+    Size.Height = 201.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 16
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 137.000000000000000000
+    Viewport.Height = 197.000000000000000000
+  end
+  object ListBox4: TListBox
+    Position.X = 340.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 149.000000000000000000
+    Size.Height = 201.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 15
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 145.000000000000000000
+    Viewport.Height = 197.000000000000000000
+  end
+  object ListBox5: TListBox
+    Position.X = 492.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 141.000000000000000000
+    Size.Height = 201.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 14
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 137.000000000000000000
+    Viewport.Height = 197.000000000000000000
+  end
+  object Button1: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 376.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 19
+    Text = 'REFRESH'
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Position.X = 360.000000000000000000
+    Position.Y = 424.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 22
+    Text = 'Izmena Boja DB'
+    TextSettings.WordWrap = True
+  end
+  object Button3: TButton
+    Position.X = 456.000000000000000000
+    Position.Y = 423.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 21
+    Text = 'Izmena Materijala DB'
+    TextSettings.WordWrap = True
+  end
+  object Button4: TButton
+    Position.X = 552.000000000000000000
+    Position.Y = 423.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 20
+    Text = 'Izmena Operacija DB'
+    TextSettings.WordWrap = True
+  end
+  object Back: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 452.000000000000000000
+    TabOrder = 1
+    Text = 'Back'
+    OnClick = BackClick
+  end
+  object GO: TButton
+    Position.X = 552.000000000000000000
+    Position.Y = 376.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = '---->'
+  end
+  object Label2: TLabel
+    StyledSettings = [Family]
+    Position.X = 8.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 13.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.FontColor = claAzure
+    Text = 'Boja Krila:'
+    TabOrder = 12
+  end
+  object Label3: TLabel
+    StyledSettings = [Family]
+    Position.X = 96.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 13.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.FontColor = claAzure
+    Text = 'Boja Stoka:'
+    TabOrder = 6
+  end
+  object Label5: TLabel
+    StyledSettings = [Family]
+    Position.X = 200.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 13.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.FontColor = claAzure
+    Text = 'Materijal Krila:'
+    TabOrder = 11
+  end
+  object Label6: TLabel
+    StyledSettings = [Family]
+    Position.X = 336.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 13.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.FontColor = claAzure
+    Text = 'Materijal Stoka:'
+    TabOrder = 10
+  end
+  object Label7: TLabel
+    StyledSettings = [Family]
+    Position.X = 488.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 13.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.FontColor = claAzure
+    Text = 'Operacije:'
+    TabOrder = 8
+  end
+  object Label8: TLabel
+    StyledSettings = [Family]
+    Position.X = 488.000000000000000000
+    Size.Width = 137.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 13.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.FontColor = claAzure
+    Text = 'Izabrane Operacije:'
+    TabOrder = 7
+  end
+  object Button5: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 560.000000000000000000
+    Position.Y = 128.000000000000000000
+    Size.Width = 32.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 24
+    Text = '^'
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = Button5Click
+  end
+  object Button6: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 600.000000000000000000
+    Position.Y = 128.000000000000000000
+    Size.Width = 32.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 23
+    Text = 'v'
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = Button6Click
+  end
+  object Label9: TLabel
+    StyledSettings = [Family]
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 13.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.FontColor = claAzure
+    Text = 'Materijal Stoka:'
+    TabOrder = 9
+  end
+  object ListBox6: TListBox
+    Position.X = 488.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 144.000000000000000000
+    Size.Height = 97.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 25
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 140.000000000000000000
+    Viewport.Height = 93.000000000000000000
+  end
+end

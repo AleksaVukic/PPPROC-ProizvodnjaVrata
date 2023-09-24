@@ -36,7 +36,9 @@ type
     ListBox1: TListBox;
     RoundRect1: TRoundRect;
     Label7: TLabel;
+    Back: TButton;
     procedure RoundRect1Click(Sender: TObject);
+    procedure BackClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -55,6 +57,12 @@ uses Main,Normiranje;
 
 
 
+
+procedure TfrmNProizvod.BackClick(Sender: TObject);
+begin
+frmNormiranje.show;
+self.hide;
+end;
 
 procedure TfrmNProizvod.RoundRect1Click(Sender: TObject);
 begin

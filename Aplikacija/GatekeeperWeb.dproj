@@ -278,6 +278,22 @@
             <Form>frmNProizvod</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+        <DCCReference Include="NewProizvod.pas">
+            <Form>frmNewProizvod</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="BojaDB.pas">
+            <Form>frmBojaDB</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="MaterijalDB.pas">
+            <Form>frmMaterijalDB</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="OperacijeDB.pas">
+            <Form>frmOperacijeDB</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
